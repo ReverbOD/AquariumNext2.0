@@ -1,8 +1,7 @@
 # AquariumNext2.0
  AquariumNext2.0 webapp
 
-My web app builded with:
-    nodejs: Build entirely with nodejs for the back-end part
+My web app builded with:																																																																																																															nodejs: Build entirely with nodejs for the back-end part
     express: used to create handle routing and process requests from the client.
     express-fileupload: Simple express file upload middleware that wraps around busboy.
     body-parser: used to parse incoming request from the client.

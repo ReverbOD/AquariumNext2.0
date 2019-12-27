@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const path = require('path');
 const app = express();
+
 // Const Page
 const {
     getPesciPage
@@ -20,12 +21,12 @@ const {
 
 // Routes
 const indexRoutes = require('./routes/index');
+const calcRoutes = require('./routes/calculate');
 
 // Port
 const port = 5000;
 
 // create connection to database
-// the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'Aquarium_admin',
@@ -55,6 +56,7 @@ app.use(fileUpload()); // configure fileupload
 
 // routes for the app
 app.get('/', indexRoutes);
+app.get('/calculate', calcRoutes);
 app.get('/fish', getPesciPage);
 app.get('/fish_card', getPesciById);
 app.get('/plant', getPiantePage);

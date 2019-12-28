@@ -41,6 +41,10 @@
 
 /* */
 
+hr {
+    visibility: hidden;
+}
+
 
 /* Footer */
 

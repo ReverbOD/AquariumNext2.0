@@ -27,6 +27,7 @@ const calcRoutes = require('./routes/calculate');
 const port = 5000;
 
 // create connection to database
+// mysql://bb0b703125fd55:39d18c92@eu-cdbr-west-02.cleardb.net/heroku_74ff73a09cff7b6?reconnect=true
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'Aquarium_admin',
@@ -62,7 +63,9 @@ app.get('/fish_card', getPesciById);
 app.get('/plant', getPiantePage);
 app.get('/plant_card', getPianteById);
 
+app.listen(process.env.PORT, process.env.IP);
+
 // set the app to listen on the port
-app.listen(8080, function() {
-    console.log('The App Has Started on localhost:8080');
-});
+//app.listen(8080, function() {
+//    console.log('The App Has Started on localhost:8080');
+//});

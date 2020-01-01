@@ -63,9 +63,9 @@ app.get('/fish_card', getPesciById);
 app.get('/plant', getPiantePage);
 app.get('/plant_card', getPianteById);
 
-app.listen(process.env.PORT, process.env.IP);
+
 
 // set the app to listen on the port
-//app.listen(8080, function() {
-//    console.log('The App Has Started on localhost:8080');
-//});
+app.listen(8080, function() {
+    console.log('The App Has Started on localhost:8080');
+});

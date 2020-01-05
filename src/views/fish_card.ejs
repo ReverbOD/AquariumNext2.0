@@ -1,0 +1,35 @@
+<%- include('partials/header'); %>
+<hr>
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Aquarium Next - Schede</p>
+            <!-- Side Menu -->
+            <% pesci.forEach((pesci, fish) => { %>
+            <div class="list-group">
+                <a class="list-group-item text-white bg-dark">
+                   <b>Info</b>
+                </a>
+                <a class="list-group-item list-group-item-action"><b>Valori acqua:</b> Ph <%= pesci.pH %> - dH <%= pesci.dH %></a>
+                <a class="list-group-item list-group-item-action"><b>Temperatura:</b> <%= pesci.temperatura %></a>
+                <a class="list-group-item list-group-item-action"><b>Provenienza:</b> <%= pesci.provenienza %></a>
+                <a class="list-group-item list-group-item-action"><b>Alimentazione</b> <%= pesci.dimensioni %></a>
+
+            </div> 
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4 text-white bg-dark" style="width:600px">
+                <img class="card-img-top" src="/db/fish/<%= pesci.image %>">
+                <div class="card-body">
+                    <h5 class="card-title"><b><%= pesci.nome %></a></b></h5>
+                    <p class="card-text">Famiglia: <%= pesci.famiglia %><br>Dimensioni: <%= pesci.dimensioni %><br>Carattere: <%= pesci.carattere %><br>Litraggio minimo consigliato: <%= pesci.litraggioMinimo %><br>Acquario di Comunita': <%= pesci.adattoAcquarioComunità %></p>
+                    <p class="card-text">Descrizione: <%= pesci.descrizione %></p>
+                </div>
+            </div>
+        </div>    
+            <% }) %>      
+    </div>              
+
+<a href="/fish" class="btn btn-dark">Torna alla tabella</a>
+<hr>
+<%- include('partials/footer'); %>

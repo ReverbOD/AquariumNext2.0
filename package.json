@@ -1,23 +1,25 @@
 {
-  "name": "aquariumnext",
-  "version": "2.0.1",
-  "description": "aquarium web app",
-  "main": "app.js",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "express-fileupload": "^1.1.6",
-    "mysql": "^2.17.1",
-    "node": "^13.3.0",
-    "nodemon": "^2.0.1",
-    "passport": "^0.4.1",
-    "req-flash": "0.0.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Giuseppe Gigliotti",
-  "license": "ISC"
+    "name": "aquariumnext",
+    "version": "2.0.1",
+    "description": "aquarium web app",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.1.6",
+        "mysql": "^2.17.1",
+        "newrelic": "^6.2.0",
+        "node": "^13.3.0",
+        "nodemon": "^2.0.1",
+        "passport": "^0.4.1",
+        "req-flash": "0.0.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node ./app",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Giuseppe Gigliotti",
+    "license": "ISC"
 }

@@ -1,0 +1,59 @@
+<%- include('partials/header'); %>
+
+<!-- Header Fish Section -->
+<!-- Header Plant Section -->
+<div class="jumbotron jumbotron-fluid p-3 mb-2 bg-secondary text-white">
+  <div class="container">
+    <h1 class="display-4">Schede Pesci</h1>
+    <p class="lead">Qui troverai tutte le schede per i principali pinnuti che si trovano in commercio</p>
+  </div>
+</div>
+
+<!-- Table Head-->
+<% if (pesci.length > 0) {%>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                
+                <th scope="col"></th>
+                <th scope="col">Nome</th>               
+                <th scope="col">Famiglia</th>
+                <th scope="col">Dimensioni</th>
+                <th scope="col">Proveninenza</th>
+                <th scope="col">Carattere</th>
+                <th scope="col">Alimentazione</th>
+                <th scope="col">pH</th>
+                <th scope="col">dH</th>
+                <th scope="col">Temperatura</th>
+                <th scope="col">Litraggio Minimo</th>
+                <th scope="col">Acquario di Comunita'</th>
+                <th scope="col">Info</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% pesci.forEach((pesci, fish) => { %>
+            <tr>
+                
+                <td><img src="/icon/fish1.png" class="rounded-circle pesci-img" alt=""></td>
+                <td><%= pesci.nome %></td>
+                <td><%= pesci.famiglia %></td>
+                <td><%= pesci.dimensioni %></td>
+                <td><%= pesci.provenienza %></td>
+                <td><%= pesci.carattere %></td>
+                <td><%= pesci.alimentazione %></td>
+                <td><%= pesci.pH %></td>
+                <td><%= pesci.dH %></td>
+                <td><%= pesci.temperatura %></td>
+                <td><%= pesci.litraggioMinimo %></td>
+                <td><%= pesci.adattoAcquarioComunità %></td>
+                <td><a href="/fish_card?id=<%= pesci.id %>" class="btn btn-dark">Guarda Scheda</a></td>
+            </tr>
+<% }) %>    
+        </tbody>
+    </table>
+<% } else { %>
+    <p class="text-center">No pesci found</p>
+<% } %>
+
+<%- include('partials/footer'); %>

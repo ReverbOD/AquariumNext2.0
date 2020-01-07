@@ -3,7 +3,7 @@
 
 My web app builded with:<br>
     For the <b>back-end i've used:</b> <br>	
-    <b>nodejs:</b> Build entirely with nodejs for the back-end part<br>																																																																																																														nodejs: Build entirely with nodejs for the back-end part
+    <b>nodejs:</b> Build entirely with nodejs for the back-end part<br>																																																												
     <b>express:</b> used to create handle routing and process requests from the client.<br>
     <b>express-fileupload:</b> Simple express file upload middleware that wraps around busboy.<br>
     <b>body-parser:</b> used to parse incoming request from the client.<br>

@@ -10,7 +10,8 @@
                     <b>Info</b>
                 </a>
                 <a class="list-group-item list-group-item-action"><b>Valori acqua:</b> Ph <%= piante.ph %> - dH <%= piante.dh %></a>
-                <a class="list-group-item list-group-item-action"><b>Provenienza:</b> <%= piante.provenienza %></a>
+                <a class="list-group-item list-group-item-action"><b>Temperatura:</b> <%= piante.temperatura %></a>
+                <a class="list-group-item list-group-item-action"><b>Dimensioni:</b> <%= piante.dimensioni %></a>
                 <a class="list-group-item list-group-item-action"><b>Luce:</b> <%= piante.luce %> </a>
                 <a class="list-group-item list-group-item-action"><b>Crescita:</b> <%= piante.difficolta %></a>
                 <a class="list-group-item list-group-item-action"><b>Riproduzione:</b> <%= piante.riproduzione %></a>
@@ -33,4 +34,5 @@
               
 
 <a href="/plant" class="btn btn-dark">Torna alla tabella</a>
+<hr>
 <%- include('partials/footer'); %>

@@ -30,13 +30,13 @@ const indexRoutes = require('./src/routes/index');
 const calcRoutes = require('./src/routes/calculate');
 
 //port
-const {
+let {
     port
 } = require('./config/app');
 
 // configure middleware
 app.set('port', process.env.port || port); // set express to use this port
-app.set('views', __dirname + '/views'); // set express to look in this folder to render our view
+app.set('views', __dirname + '/src/views'); // set express to look in this folder to render our view
 app.set('view engine', 'ejs'); // configure template engine
 app.use(bodyParser.urlencoded({
     extended: false
@@ -54,7 +54,8 @@ app.get('/plant', getPiantePage);
 app.get('/plant_card', getPianteById);
 
 //set the app to listen on the port
-app.listen(process.env.PORT);
+port = process.env.PORT ? process.env.PORT : port;
+app.listen(port);
 
 // Log error write>
 process.on('uncaughtException', err => {

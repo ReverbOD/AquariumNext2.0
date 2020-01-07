@@ -1,10 +1,10 @@
 const mysql = require('mysql');
-const params = require('../../config/database');
+const { connection } = require('../../config/database');
 
 
 module.exports = {
     getPesci(callback) {
-        const db = mysql.createConnection(params);
+        const db = mysql.createConnection(connection);
 
         db.connect((err) => {
             if (err) {
@@ -28,7 +28,7 @@ module.exports = {
         });
     },
     getPesciById(id, callback) {
-        const db = mysql.createConnection(params);
+        const db = mysql.createConnection(connection);
 
         db.connect((err) => {
             if (err) {

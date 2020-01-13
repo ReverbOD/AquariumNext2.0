@@ -18,7 +18,7 @@
 }
 
 
-/* Thin out the marketing headings */
+/* Thin out the featurette headings */
 
 .featurette-heading {
     font-weight: 300;
@@ -39,10 +39,24 @@
 }
 
 
-/* */
+/* hr visibility */
 
 hr {
     visibility: hidden;
+}
+
+
+/* cardboard set */
+
+#cardboard {
+    padding: 0;
+}
+
+
+/* */
+
+#tab {
+    padding: 10px;
 }
 
 

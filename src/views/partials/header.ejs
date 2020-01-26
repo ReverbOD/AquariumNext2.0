@@ -1,52 +1,181 @@
 <!DOCTYPE html>
-<html>
 
 <head>
+    
     <title>AquariumNext#</title>
 
-    <!-- responsive-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AquariumNext, web app aquariology">
+    <meta name="author" content="Giuseppe Gigliotti">
 
-    
-    <link rel="stylesheet" href="/stylesheets/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    
+    <!--Responsive designe-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css"  href="css/main.css">
+    <link rel="stylesheet" type="text/css"  href="css/themes.css">
+
+    <!-- Modernizr.js -->
+    <script type="text/javascript" src="/js/vendor/modernizr-respond.min.js"></script>
 </head>
 
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">AquariumNext</a>
+<!-- Header -->
+
+<body class="header-fixed-top sidebar-left-pinned">
+
+    <!-- Sidebar -->
+    <div id="sidebar-left" class="enable-hover">
+        <!-- Sidebar Content -->
+        <div class="sidebar-content">
+            <!-- scrolling functionality -->
+            <div class="sidebar-left-scroll">
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li>
+                        <h2 class="sidebar-header">Benvenuti</h2>
+                    </li>
+                    <li>
+                        <a href="/" class=" active"><i class="fa fa-home"></i>Menu' Principale</a>
+                    </li>
+                    <li>
+                        <h2 class="sidebar-header">Utility</h2>
+                    </li>
+                    <!-- Calculator -->
+                    <li>
+                        <a href="#" class="menu-link"><i class="fa fa-calculator"></i>Calcolatori</a>
+                        <ul>
+                            <li>
+                                <a href="/litraggio">Litraggio Vasca</a>
+                            </li>
+                            <li>
+                                <a href="/pompa">Portata Pompa</a>
+                            </li>
+                            <li>
+                                <a href="/termostato">Termostato</a>
+                            </li>
+                            <li>
+                                <a href="/filtraggio">Filtraggio Biologico</a>
+                            </li>
+                            <li>
+                                <a href="/lumen">Lumen Lampada Led</a>
+                            </li>
+                            <li>
+                                <a href="/fondo">Fondo</a>
+                            </li>
+                            <li>
+                                <a href="/cambio">Cambio Acqua</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Card -->
+                    <li>
+                        <a href="#" class="menu-link"><i class="fa fa-th"></i>Schede</a>
+                        <ul>
+                            <li>
+                                <a href="/fish">Pesci</a>
+                            </li>
+                            <!--<li>
+                                <a href="invertebrati.html">Invertebrati</a>
+                            </li>-->
+                            <li>
+                                <a href="/plant">Piante</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Article -->
+                    <li>
+                        <h2 class="sidebar-header">Articoli</h2>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-link"><i class="fa fa-tablet"></i>Acquariologia</a>
+                        <ul>
+                            <li>
+                                <a href="/history">Storia</a>
+                            </li>
+                            <li>
+                                <a href="/chemestry">Chimica dell'Acqua</a>
+                            </li>
+                            <li>
+                                <a href="/azoto">Ciclo dell'Azoto</a>
+                            </li>
+                            <li>
+                                <a href="/choose">Primo Avvio Vasca</a>
+                            </li>
+                            <li>
+                                <a href="/donotbuy">Pesci da NON comprare</a>
+                            </li>
+                            <li>
+                                <a href="/rock">Rocce per acquariologia</a>
+                            </li>
+                            <li>
+                                <a href="/wood">Legni per acquariologia</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- DIY -->
+                    <li>
+                        <a href="#" class="menu-link"><i class="fa fa-cog"></i>Fai da Te</a>
+                        <ul>
+                            <li>
+                                <a href="/co2">Co2</a>
+                            </li>
+                            <li>
+                                <a href="/pmdd">Pmdd</a>
+                            </li>
+                            <li>
+                                <a href="/background">Sfondo 3D</a>
+                            </li>
+                            <li>
+                                <a href="/naturewood">Trattare Legni presi in Natura</a>
+                            </li>
+                            <li>
+                                <a href="/float">Separatore piante galleggiante</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Biotope -->
+                    <li>
+                        <a href="#" class="menu-link"><i class="fa fa-pagelines"></i>Biotopi</a>
+                        <ul>
+                            <li>
+                                <a href="/southamerica">Sud America</a>
+                            </li>
+                            <li>
+                                <a href="/africa">Africa</a>
+                            </li>
+                            <li>
+                                <a href="/asia">Asia</a>
+                            </li>
+                            <!-- <li>
+                                <a href="/europe">Europa</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <!-- END Sidebar Navigation -->
+            </div>
+            <!-- END scrolling functionality -->
         </div>
-        <!-- Navbar Item-->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav navbar-left">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/calculate">Calcolatori</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/plant">Piante</a>
-            </li>
-            <li class="nav-item" active>
-              <a class="nav-link" href="/fish">Pesci</a>
-            </li>
-          </ul>
-        </div>
-    </div>  
-  </nav>
+        <!-- END Sidebar Content -->
+    </div>
+    <!-- END Left Sidebar -->
+
+    <!-- Page Container -->
+    <div id="page-container">
+        <!-- Header -->
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <!-- Left Header Navigation -->
+            <ul class="nav header-nav pull-left">
+                <li>
+                    <a href="javascript:void(0)" id="sidebar-left-toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- END Left Header Navigation -->
+        </header>
+        <!-- END Header -->

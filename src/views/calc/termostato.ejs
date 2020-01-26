@@ -1,0 +1,70 @@
+<%- include('../partials/header'); %>
+
+<!-- FX Container -->
+        <div id="fx-container" class="fx-opacity">
+            <!-- Page content -->
+            <div id="page-content" class="block">
+                <!-- Calc Header -->
+                <div class="block-header">
+                    <a href="" class="header-title-link">
+                        <h1>
+                            <i class="fa fa-font animation-expandUp"></i>Calcolatore per il termostato<br><small>Utility
+                                per il calcolo
+                                del wattaggio necessario della tua vasca!</small>
+                        </h1>
+                    </a>
+                </div>
+                <ul class="breadcrumb breadcrumb-top">
+                    <li><i class="fa fa-home"></i></li>
+                    <li>Calcolatori</li>
+                    <li><a href="">termostato</a></li>
+                </ul>
+                <!-- END Calc Header -->
+                <div class="block full">
+                    <!-- Calc Title -->
+                    <div class="block-title">
+
+                        <h2>Calcolatore termostato</h2>
+                    </div>
+                    <!-- END Calc Title -->
+                    <!-- Calc Content -->
+                     <div class="row gutter30 headings-container">
+                        <div class="col-md-6">
+                           <form id="calcTermos">
+                                <div class="form-group">
+                                    <label for="litraggio">Inserisci Litraggio Vasca</label>
+                                    <input type="number" min="0" class="form-control" id="litraggio" placeholder="Litraggio" required />
+                                </div>
+                                <button type="submit" class="btn btn-primary">Calcola</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </form>
+                             <div class="alert alert-success d-none mt-2" role="alert" id="resultTermos"></div>
+                        </div>
+                    </div>
+                    <!-- END Calc Content -->
+                </div>
+                <!-- END Headings Block -->
+
+                <!-- Text Block -->
+                <div class="block">
+                    <!-- Text Title -->
+                    <div class="block-title">
+                        <h2>Info</h2>
+                    </div>
+                    <!-- END Text Title -->
+                    <!-- Text Content -->
+                    <div class="row gutter30">
+                        <div class="col-md-6">
+                            <p class="lead">Perchè conoscere il litraggio?</p>
+                            <p>Diversi delle specie che ospitiamo nei nostri acquari sono abituati a vivere in un ambiente caldo a seconda delle stagioni, che sia in estate o in inverno, devono rimanere in un ambiente con temperatura impostata e controllata da un particolare macchinario. Il riscaldatore per acquario ha appunto questa funzione, di regolare e mantenere in maniera automatica la temperatura dell’acqua fino ad un valore impostato, evitando il raffreddamento dell’acqua che potrebbe essere dannoso.</p>
+                            <p>Nella scelta di un termo riscaldatore per acquario è bene capire la giusta potenza e le caratteristiche che deve possedere questo strumento per funzionare nel migliore dei modi. Nella scelta del prodotto si tiene quasi sempre conto della grandezza dell’acquario e della quantità di acqua, per cui si fa riferimento ad un particolare rapporto di 1 watt per ogni litro di acqua presente all’interno dell’acquario. In questo modo è possibile riscaldare l’acqua in maniera veloce e immediata, senza andare a sollecitare troppo l’utilizzo della resistenza e del termostato dell’acquario.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>La temperatura che va impostata è specifica per ogni singolo esemplare, anche se un valore medio per i pesci tropicali è intorno ai 24/26°, un intervallo versatile e idoneo alla gran parte dei pesci che popolano l’acquario. Bisogna considerare anche gli sbalzi di temperatura che possono esserci tra la notte e il giorno e nel corso delle stagioni fredde o calde, in particolare in estate o in inverno. In particolare, nel periodo estivo può capitare di spegnere il dispositivo per evitare di riscaldare ulteriormente la temperatura dell’acqua, che già risulta abbastanza calda. In ogni caso il termostato funziona e si attiva solo quando la temperatura scende sotto determinati limiti e quindi si può tranquillamente scegliere di lasciarlo nell’acquario o di toglierlo momentaneamente ricordandosi di riposizionarlo nel periodo autunnale.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Text Content -->
+            </div>
+<%- include('../partials/footer'); %>

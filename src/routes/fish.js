@@ -7,12 +7,11 @@ module.exports = {
     getPesciPage: (req, res) => {
 
         Fishes.getPesci((err, pesci) => {
-            if (err){
+            if (err) {
                 writeError(err);
                 res.redirect('/');
-            }
-            else {
-                res.render('fish.ejs', {
+            } else {
+                res.render('fish/fish.ejs', {
                     pesci
                 });
             }

@@ -1,0 +1,93 @@
+<%- include('../partials/header'); %>
+
+<!-- FX Container -->
+        <div id="fx-container" class="fx-opacity">
+            <!-- Page content -->
+            <div id="page-content" class="block">
+                <!-- Page Header -->
+                <div class="block-header">
+                    <a href="" class="header-title-link">
+                        <h1>
+                            <i class="fa fa-font animation-expandUp"></i>Calcolatore per il cambio dell'acqua<br><small>Utility
+                                per il calcolo
+                                per sistemare i valori della tua vasca!</small>
+                        </h1>
+                    </a>
+                </div>
+                <ul class="breadcrumb breadcrumb-top">
+                    <li><i class="fa fa-home"></i></li>
+                    <li>Calcolatori</li>
+                    <li><a href="">Cambio Acqua</a></li>
+                </ul>
+                <!-- END Page Header -->
+
+                <!-- Headings Calc -->
+                <div class="block full">
+                    <!-- Calc Title -->
+                    <div class="block-title">
+                        <h2>Calcolatore Cambio Acqua</h2>
+                    </div>
+                    <!-- END Calc Title -->
+                    <!-- Calc Content -->
+                    <div class="row gutter30 headings-container">
+                        <div class="col-md-6">
+                           <form id="calcChange">
+                                <div class="form-group">
+                                    <label for="change">Quantità lt Cambio</label>
+                                    <input type="number" min="0" class="form-control" id="change" placeholder="Lunghezza" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="kh">kH Acqua di rete</label>
+                                    <input type="number" min="0" class="form-control" id="kh" placeholder="kH" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="gh">gH Acqua di rete</label>
+                                    <input type="number" min="0" class="form-control" id="gh" placeholder="gH" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="khDesire">kH che vuoi raggiungere</label>
+                                    <input type="number" min="0" class="form-control" id="khDesire" placeholder="kH Desiderato" required />
+                                </div>
+                                <button type="submit" class="btn btn-primary">Calcola</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </form>
+                             <div class="alert alert-success d-none mt-2" role="alert" id="resultChange"></div>
+                        </div>
+                    </div>
+                    <!-- END Calc Content -->
+                </div>
+                <!-- END Calc Block -->
+
+                <!-- Text Block -->
+                <div class="block">
+                    <!-- Text Title -->
+                    <div class="block-title">
+                        <h2>Info</h2>
+                    </div>
+                    <!-- END Text Title -->
+                    <!-- Text Content -->
+                    <div class="row gutter30">
+                        <div class="col-md-6">
+                            <p class="lead">Perchè cambiare acqua</p>
+                            <p>La necessità di matenere i valori come pH, kH e gH nella norma, tenendo bassi i valori di no2 e no3 bassi.</p>
+                            <p>Tuttavia in molti acquari ben popolati e ben piantumati, i nitrati (e i fosfati) devo integrarli, ma questo non significa che possa rinunciare totalmente al cambio dell’acqua; anche in presenza di una fertilizzazione costante, un cambio d’acqua può reintegrare ed equilibrare i sali disciolti.
+
+Cambiare l’acqua ha anche un effetto stimolante per alcune specie; di contro, altre necessitano della cosiddetta acqua vecchia per riprodursi, quindi i cambi andranno evitati.
+
+Attraverso i cambi dell’acqua, posso introdurre acqua più o meno dura di quella in vasca e più o meno acida, variando così leggermente i valori per applicare una stagionalità. Oppure introdurre acqua più fresca e tenera per stimolare alcuni pesci a deporre.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>In ultima, anche se il fenomeno non è ben chiaro, cambiare l’acqua a intervalli ravvicinati e con cambi del 10-20% pare aiuti a tenere sotto controllo lo sviluppo di alcune alghe come le BBA, anche se gli inquinanti sono bassi; viceversa in altre situazioni cambi troppo frequenti penalizzano le piante e rendono le alghe presenti più competitive. In media, molto indicativamente, in un acquario ben progettato è sufficiente un cambio del 10% a settimana o del 20% ogni 15 giorni, se proprio vogliamo dare una regola, ma anche qui non muore nessuno se i cambi sono più dilazionati, specie in acquari molto maturi.
+
+Tutto questo molto indicativamente, ci tengo a sottolinearlo: pesci molto prolifici, oppure che sporcano molto rendono necessari cambi più corposi; di contro ci sono pesci che mal sopportano cambi frequenti oppure acquari che necessitano di cambi solo a intervalli molto lunghi. Può essere semplicemente acqua dura di rete lasciata a decantare, qualora in acquario abbia una popolazione che vuole durezze alte e pH basico, premettendo che l’acqua di rete è tipicamente dura e con pH basico, ma ciò non è scontato.Se la popolazione necessita di acqua tenera e pH acido, sarà necessario procedere a tagliare l’acqua del cambio con acqua di osmosi inversa che ha durezze quasi uguali o uguali a zero, in modo da mantenere o abbassare le durezze in vasca.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Text Content -->
+            </div>
+
+<script type="text/javascript" src="js/calculator.js"></script>
+
+<%- include('../partials/footer'); %>
+

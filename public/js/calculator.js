@@ -1,105 +1,147 @@
 //litrages calculator
-var form = document.getElementById('litri');
 
-function litraggio(e) {
+$('#calcLt').on('submit', function(e) {
     e.preventDefault();
-    var lenght = parseInt(document.getElementById('insertLenght').value);
-    var deep = parseInt(document.getElementById('insertDeep').value);
-    var high = parseInt(document.getElementById('insertHigh').value);
-    var a = 1000;
-    var resultLt = document.getElementById("resultLt");
-    var sumLt = "la tua vasca è di " + lenght * deep * high / a + " lt";
+    $('#resultLt').addClass('d-none');
 
-    resultLt.innerHTML = sumLt;
-}
+    var num1 = parseInt($('#lenght').val());
+    var num2 = parseInt($('#high').val());
+    var num3 = parseInt($('#deep').val());
+    var num4 = 1000;
 
-form.addEventListener('submit', litraggio);
+    var result = 'La tua vasca avrà un litraggio di ' + (num1 * num2 * num3 / num4) + " lt";
+
+    $('#resultLt').html(result);
+    $('#resultLt').removeClass('d-none');
+});
+
+$('#calcLt').on('reset', function() {
+    $('#resultLt').addClass('d-none');
+});
+// END litrages calc
 
 // biological calculator
-var form = document.getElementById('bio');
+$('#calcFiltraggio').on('submit', function(e) {
+    e.preventDefault();
+    $('#resultFiltraggio').addClass('d-none');
 
-function biological(f) {
-    f.preventDefault();
-    var lt = parseInt(document.getElementById('insertLt').value);
-    var gr = 10;
-    var resultBio = document.getElementById('resultBio');
-    var sumBio = "Per una filtrazione biologica hai bisogno di " + lt * gr + " gr di filtranti biologici";
+    var num1 = parseInt($('#litraggio').val());
+    var num2 = 10;
 
-    resultBio.innerHTML = sumBio;
-}
+    var result = 'Per un filtraggio biologico ottimale avrai bisogno di gr ' + (num1 * num2) + " di materiale filtrante";
 
-form.addEventListener('submit', biological);
+    $('#resultFiltraggio').html(result);
+    $('#resultFiltraggio').removeClass('d-none');
+});
+
+$('#calcFiltraggio').on('reset', function() {
+    $('#resultFiltraggio').addClass('d-none');
+});
+// END biological Calc
 
 // pump calculator
-var form = document.getElementById("pump");
+$('#calcPompa').on('submit', function(e) {
+    e.preventDefault();
+    $('#resultPompa').addClass('d-none');
 
-function pumpSpeed(g) {
-    g.preventDefault();
-    var lit = parseInt(document.getElementById('insertLit').value);
-    var a = 4;
-    var resultPump = document.getElementById('resultPump');
-    var sumPump = "Per una circolazione ottimale hai bisogno di una pompa con una portata di " + lit * a + " lt/s";
+    var num1 = parseInt($('#litraggio').val());
+    var num2 = 4;
 
-    resultPump.innerHTML = sumPump;
-}
+    var result = 'Per una circolazione ottimale avrai bisogno di una pompa con ' + (num1 * num2) + " lt/h";
 
-form.addEventListener('submit', pumpSpeed);
+    $('#resultPompa').html(result);
+    $('#resultPompa').removeClass('d-none');
+});
+
+$('#calcPompa').on('reset', function() {
+    $('#resultPompa').addClass('d-none');
+});
+// END pump calc
 
 // lumen calculator
-var form = document.getElementById("lumen");
+$('#calcLumen').on('submit', function(e) {
+    e.preventDefault();
+    $('#resultLumen').addClass('d-none');
 
-function lumenLed(h) {
-    h.preventDefault();
-    var liter = parseInt(document.getElementById('insertLiter').value);
-    var lum = parseInt(document.getElementById('insertLumen').value);
-    var resultLumen = document.getElementById('resultLumen');
-    var sumLum = "Hai un rapporto Lumen/litri pari a " + liter / lum;
+    var num1 = parseInt($('#litraggio').val());
+    var num2 = parseInt($('#lumen').val());
 
-    //if (sumLum < 40) {
-    //    minimum = "hai un valore basso";
-    //} else if (sumLum > 40 && < 60) {
-    //    medium = "Hai un buon valore";
-    //} else(sumLum > 60) {
-    //    high = "hai un valore alto";
-    //};
+    var result = 'Il rapporto Lumen/Litri è di ' + (num2 / num1);
 
-    resultLumen.innerHTML = sumLum;
-}
+    $('#resultLumen').html(result);
+    $('#resultLumen').removeClass('d-none');
+});
 
-form.addEventListener('submit', lumenLed);
+$('#calcLumen').on('reset', function() {
+    $('#resultLumen').addClass('d-none');
+});
+
+//if (sumLum < 40) {
+//    minimum = "hai un valore basso";
+//} else if (sumLum > 40 && < 60) {
+//    medium = "Hai un buon valore";
+//} else(sumLum > 60) {
+//    high = "hai un valore alto";
+//};
+// END lumen calc
 
 // ground calculator
-var form = document.getElementById('ground');
+$('#calcFondo').on('submit', function(e) {
+    e.preventDefault();
+    $('#resultFondo').addClass('d-none');
 
-function groundHigh(i) {
-    i.preventDefault();
-    var lenght = parseInt(document.getElementById('insertLenghtTank').value);
-    var deep = parseInt(document.getElementById('insertDeepTank').value);
-    var ground = parseInt(document.getElementById('insertGround').value);
-    var b = 1000;
-    var resultGround = document.getElementById('resultGround');
-    var sum = "Hai bisogno di " + lenght * deep * ground / b + " kg di fondo per acquari";
+    var num1 = parseInt($('#lenght').val());
+    var num2 = parseInt($('#high').val());
+    var num3 = parseInt($('#deep').val());
+    var num4 = 1000;
 
-    resultGround.innerHTML = sum;
-}
+    var result = "Per l'altezza del fondo desiderata avrai bisogno di kg " + (num1 * num2 * num3 / num4);
 
-form.addEventListener('submit', groundHigh);
+    $('#resultFondo').html(result);
+    $('#resultFondo').removeClass('d-none');
+});
+
+$('#calcFondo').on('reset', function() {
+    $('#resultFondo').addClass('d-none');
+});
+// END ground calc
 
 // water change calculator
-var form = document.getElementById("change");
+$('#calcChange').on('submit', function(e) {
+    e.preventDefault();
+    $('#resultChange').addClass('d-none');
 
-function waterChange(l) {
-    l.preventDefault();
-    var change = parseInt(document.getElementById("insertChange").value);
-    var kh = parseInt(document.getElementById("insertKh").value);
-    var gh = parseInt(document.getElementById("insertGh").value);
-    var khDesire = parseInt(document.getElementById("insertKhDesire").value);
-    var resultChange = document.getElementById('resultChange');
-    var sumChange = ((change / khDesire) * kh);
-    var sumGh = ((gh / change) * sumChange);
-    var sum = "Per raggiungere i valori desiderati hai bisogno di " + sumChange + " e avrai un gH pari a " + sumGh;
+    var change = parseInt($('#change').val());
+    var kh = parseInt($('#kh').val());
+    var gh = parseInt($('#gh').val());
+    var khDesire = parseInt($('#khDesire').val());
 
-    resultChange.innerHTML = sum;
-}
+    var result = ' L acqua sarà composta al ' + ((change / khDesire) * kh) + ' % di osmosi su ' + change + ' lt, e avrai un gH di ' + ((gh / change) * ((change / khDesire) * kh))
 
-form.addEventListener('submit', waterChange);
+    $('#resultChange').html(result);
+    $('#resultChange').removeClass('d-none');
+});
+
+$('#calcChange').on('reset', function() {
+    $('#resultChange').addClass('d-none');
+});
+// END water change Calc
+
+// termos calculator
+$('#calcTermos').on('submit', function(e) {
+    e.preventDefault();
+    $('#resultTermos').addClass('d-none');
+
+    var num1 = parseInt($('#litraggio').val());
+    var num2 = 2;
+
+    var result = 'Avrai bisogno di un riscaldatore con un wattaggio di ' + (num1 * num2) + 'o superiore';
+
+    $('#resultTermos').html(result);
+    $('#resultTermos').removeClass('d-none');
+});
+
+$('#calcTermos').on('reset', function() {
+    $('#resultTermos').addClass('d-none');
+});
+// END termos calc

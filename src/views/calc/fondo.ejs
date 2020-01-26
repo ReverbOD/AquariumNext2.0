@@ -1,0 +1,81 @@
+<%- include('../partials/header'); %>
+
+<!-- FX Container -->
+        <div id="fx-container" class="fx-opacity">
+            <!-- Page content -->
+            <div id="page-content" class="block">
+                <!-- Page Header -->
+                <div class="block-header">
+                    <a href="" class="header-title-link">
+                        <h1>
+                            <i class="fa fa-font animation-expandUp"></i>Calcolatore per il litraggio<br><small>Utility
+                                per il calcolo
+                                del litraggio della tua vasca!</small>
+                        </h1>
+                    </a>
+                </div>
+                <ul class="breadcrumb breadcrumb-top">
+                    <li><i class="fa fa-home"></i></li>
+                    <li>Calcolatori</li>
+                    <li><a href="">litraggio</a></li>
+                </ul>
+                <!-- END Page Header -->
+
+                <!-- Headings Calc -->
+                <div class="block full">
+                    <!-- Calc Title -->
+                    <div class="block-title">
+                        <h2>Calcolatore litraggio</h2>
+                    </div>
+                    <!-- END Calc Title -->
+
+                    <!-- Calc Content -->
+                    <div class="row gutter30 headings-container">
+                        <div class="col-md-6">
+                           <form id="calcFondo">
+                                <div class="form-group">
+                                    <label for="lenght">Lunghezza</label>
+                                    <input type="number" min="0" class="form-control" id="lenght" placeholder="Lunghezza" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="high">Altezza Fondo</label>
+                                    <input type="number" min="0" class="form-control" id="high" placeholder="Altezza" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="deep">Profondità</label>
+                                    <input type="number" min="0" class="form-control" id="deep" placeholder="Profondità" required />
+                                </div>
+                                <button type="submit" class="btn btn-primary">Calcola</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </form>
+                             <div class="alert alert-success d-none mt-2" role="alert" id="resultFondo"></div>
+                        </div>
+                    </div>
+                    <!-- END Calc Content -->
+                </div>
+                <!-- END Headings Calc -->
+
+                <!-- Text Block -->
+                <div class="block">
+                    <!-- Text Title -->
+                    <div class="block-title">
+                        <h2>Info</h2>
+                    </div>
+                    <!-- END Text Title -->
+
+                    <!-- Text Content -->
+                    <div class="row gutter30">
+                        <div class="col-md-6">
+                            <p class="lead">Perchè è importante il fondo?</p>
+                            <p>La necessità di un buon fondo con la giusta altezza è prevalentemente per le piante, per permettere una corretta diffusione dell'apparato radicale delle piante, oltre che per imitare il fondo del biotopo scelto.</p>
+                            <p>Il giusto spessore per il fondo mediamente deve essere di circa 6 e i 10cm. Per la scelta e sapere di più sul fondo, vi rimando all'articolo <a href="/">qui presente</a> per approfondire
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END Paragraphs and Links -->
+                </div>
+                <!-- END Text Content -->
+            </div>
+            <!-- END Text Block -->
+
+<%- include('../partials/footer'); %>

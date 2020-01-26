@@ -6,7 +6,7 @@ module.exports = {
             if (err)
                 res.render('/');
             else {
-                res.render('fish_card.ejs', {
+                res.render('fish/fish_card.ejs', {
                     pesci
                 });
             }

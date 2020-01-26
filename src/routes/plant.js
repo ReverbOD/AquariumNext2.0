@@ -8,12 +8,11 @@ module.exports = {
     getPiantePage: (req, res) => {
 
         Plants.getPiante((err, piante) => {
-            if (err){
+            if (err) {
                 writeError(err);
                 res.redirect('/');
-            }
-            else {
-                res.render('plant.ejs', {
+            } else {
+                res.render('plant/plant.ejs', {
                     piante
                 });
             }

@@ -1,0 +1,76 @@
+ <%- include('../partials/header'); %>
+
+<% if (pesci.length > 0) {%>
+<!-- Table header -->
+    <div id="fx-container" class="fx-opacity">
+        <!-- Page content -->
+        <div id="page-content" class="block full">
+            <!-- Datatables Header -->
+            <div class="block-header">
+                <a href="" class="header-title-link">
+                    <h1>
+                        <i class="fa fa-th animation-expandUp"></i>Schede Pesci<br><small>Qui troverai i pinnuti presenti nei nostri acquari</small>
+                    </h1>
+                </a>
+            </div>
+            <ul class="breadcrumb breadcrumb-top">
+                <li><i class="fa fa-th"></i></li>
+                <li>Schede</li>
+                <li><a href="">Pesci</a></li>
+            </ul>
+            <!-- END Datatables Header -->
+            <!-- Datatables Content -->
+            
+            <div class="table-responsive">
+                <table id="example-datatable" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center"></th>
+                            <th>Nome</th>
+                            <th>Famiglia</th>
+                            <th>Provenienza</th>
+                            <th class="text-center">Litraggio minimo consigliato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <% pesci.forEach((pesci, fish) => { %>
+                        <tr>
+                            <td class="text-center"><img src="/icon/fish1.png" class="rounded-circle pesci-img" alt=""></td>
+                            <td><a href="/fish_card?id=<%= pesci.id %>"><%= pesci.nome %></a></td>
+                            <td><%= pesci.famiglia %></td>
+                            <td><%= pesci.provenienza %></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <%= pesci.litraggioMinimo %>
+                                </div>
+                            </td>
+                        </tr>
+                    <% }) %>  
+                    </tbody>
+                </table>
+<% } else { %>
+    <p class="text-center">No pesci found</p>
+<% } %>
+        </div>
+        <!-- END Datatables Content -->
+    </div>
+    <!-- END Page Content -->
+    
+<%- include('../partials/footer'); %>
+
+<!-- Datables -->
+<script>
+    $(function () {
+        /* Initialize Bootstrap Datatables Integration */
+        webApp.datatables()
+        /* Initialize Datatables */
+        $('#example-datatable').dataTable({
+            columnDefs: [{orderable: false, targets: [4]}],
+            pageLength: 15,
+            lengthMenu: [[15, 30, 50, -1], [15, 30, 50, "Tutti"]]
+        });
+
+        /* search form */
+        $('.dataTables_filter input').attr('placeholder', 'Cerca');
+    });
+</script>

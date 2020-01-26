@@ -6,7 +6,7 @@ module.exports = {
             if (err)
                 res.render('/');
             else {
-                res.render('plant_card.ejs', {
+                res.render('plant/plant_card.ejs', {
                     piante
                 });
             }

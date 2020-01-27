@@ -17,13 +17,13 @@ var webApp = function() {
     var uiInit = function() {
 
         // Add the correct copyright year at the footer
-        var yearCopy = $('#year-copy'),
+        var yearCopy = $('#2020'),
             d = new Date();
 
-        if (d.getFullYear() === 2013) {
-            yearCopy.html('2013');
+        if (d.getFullYear() === 2020) {
+            yearCopy.html('2020');
         } else {
-            yearCopy.html('2013-' + d.getFullYear().toString().substr(2, 2));
+            yearCopy.html('2020-' + d.getFullYear().toString().substr(2, 2));
         }
 
         // Add opacity to the header when scrolling (you can comment/remove the following line if you prefer a solid header)

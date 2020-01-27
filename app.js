@@ -57,6 +57,7 @@ const naturewoodRoutes = require('./src/routes/naturewood');
 const pmddRoutes = require('./src/routes/pmdd');
 const rockRoutes = require('./src/routes/rock');
 const woodRoutes = require('./src/routes/wood');
+const groundRoutes = require('./src/routes/ground');
 
 //port
 let {
@@ -103,6 +104,7 @@ app.get('/naturewood', naturewoodRoutes);
 app.get('/pmdd', pmddRoutes);
 app.get('/rock', rockRoutes);
 app.get('/wood', woodRoutes);
+app.get('/ground', groundRoutes);
 
 //set the app to listen on the port
 port = process.env.PORT ? process.env.PORT : port;

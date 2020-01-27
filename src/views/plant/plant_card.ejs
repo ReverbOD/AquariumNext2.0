@@ -1,137 +1,124 @@
 <%- include('../partials/header'); %>
 
 <% piante.forEach((piante, plant) => { %>>
-        <div id="fx-container" class="fx-opacity">
-            <!-- Page content -->
-            <div id="page-content" class="block">
-                <!-- Card Profile Header -->
-                <div class="block-header">
-                    <div class="row remove-margin">
-                    
-                        <!-- Photo and Name -->
-                        <div class="col-sm-6">
-                            <!-- If you do not want a link in the header, instead of .header-title-link you can use a div with the class .header-section -->
-                            <a href="" class="header-title-link">
-
-                                <h1 class="profile-name">
-                                    AquariumNext <br><small>Scheda Pianta</small>
-                                </h1>
-                            </a>
-                        </div>
-                        <!-- END Photo and Name -->
-
-                        <!-- Extra -->
-                        <div class="col-sm-6">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <a href="javascript:void(0)" class="header-link">
-                                        <h1 class="animation-pullDown">
-
-                                        </h1>
-                                    </a>
-                                </div>
-                                <div class="col-xs-4">
-                                    <a href="javascript:void(0)" class="header-link">
-                                        <h1 class="animation-pullDown">
-
-                                        </h1>
-                                    </a>
-                                </div>
-                                <div class="col-xs-4">
-                                    <a href="javascript:void(0)" class="header-link">
-                                        <h1 class="animation-pullDown">
-
-                                        </h1>
-                                    </a>
-                                </div>
+    <div id="fx-container" class="fx-opacity">
+        <!-- Page content -->
+        <div id="page-content" class="block">
+            <!-- Card Profile Header -->
+            <div class="block-header">
+                <div class="row remove-margin">                  
+                    <!-- Photo and Name -->
+                    <div class="col-sm-6">
+                        <!-- If you do not want a link in the header, instead of .header-title-link you can use a div with the class .header-section -->
+                        <a href="" class="header-title-link">
+                            <h1 class="profile-name">
+                                AquariumNext <br><small>Scheda Pianta</small>
+                            </h1>
+                        </a>
+                    </div>
+                    <!-- END Photo and Name -->
+                    <!-- Extra -->
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <a href="javascript:void(0)" class="header-link">
+                                    <h1 class="animation-pullDown"></h1>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="javascript:void(0)" class="header-link">
+                                    <h1 class="animation-pullDown"></h1>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="javascript:void(0)" class="header-link">
+                                    <h1 class="animation-pullDown"></h1>
+                                </a>
                             </div>
                         </div>
-                        <!-- END Extra -->
-                    
                     </div>
+                    <!-- END Extra -->    
                 </div>
-                <ul class="breadcrumb breadcrumb-top">
-                    <li><i href="/" class="fa fa-bookmark"></i></li>
-                    <li><i href="/" ></i>Tabella</li>
-                    <li><a href=""><%= piante.nome %></a></li>
-                </ul>
-                <!-- END Card Profile Header -->
-
-                <!-- Card Content -->
-                <div class="row gutter30">
-                    <div class="col-md-8">
-                        <div class="block">
-                            <div class="block-title">
-                                <h2><i class="fa fa-rss"></i>
-                                    <%= piante.nome %>
-                                </h2>
-                            </div>
-                            <!-- Card Image -->
-                            <ul class="media-list text-center">
-                                <li class="media">
-                                    <img src="/db/plant/<%= piante.image %>" class="card">
-                                </li>
-                            </ul>
-                            <!-- End Card Image -->    
-                        </div>
-                    </div>
-                    <!-- Lateral Box -->
-                    <div class="col-md-4">
-                        <!-- Water Needs -->
-                        <div class="block full">
-                            <div class="block-title">
-                                <h2><i class="fa fa-tint" aria-hidden="true"></i> Valori Acqua</h2>
-                            </div>
-                            <ul>
-                                <li>pH:
-                                    <%= piante.ph %>
-                                </li>
-                                <li>gH:
-                                    <%= piante.dh %>
-                                </li>
-                                <li>Temperatura:
-                                    <%= piante.temperatura %>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- END Water Needs -->
-                        <!-- Description -->
-                        <div class="block">
-                            <div class="block-title">
-                                <h2><i class="fa fa-info"></i> Descrizione</h2>
-                            </div>
-                            <ul>
-                                <li>Famiglia:
-                                    <%= piante.famiglia %>
-                                </li>
-                                <li>Dimensioni:
-                                    <%= piante.dimensioni %>
-                                </li>
-                                <li>Provenienza:
-                                    <%= piante.provenienza %>
-                                </li>
-                                <li>Crescita:
-                                    <%= piante.crescita %>
-                                </li>
-                                <li>Difficolta':
-                                    <%= piante.difficolta %>
-                                </li>
-                                <li>Riproduzione:
-                                    <%= piante.riproduzione %>
-                                </li>
-                            </ul>
-                            <p>
-                                <%= piante.descrizione %>
-                            </p>
-
-                        </div>
-                        <!-- END Description -->
-                    </div>
-                    <!-- END Lateral Box -->
-                </div>
-                <!-- END User Card Box -->
             </div>
-            <!-- END Page Content -->
+            <ul class="breadcrumb breadcrumb-top">
+                <li><i href="/" class="fa fa-bookmark"></i></li>
+                <li><i href="/" ></i>Tabella</li>
+                <li><a href=""><%= piante.nome %></a></li>
+            </ul>
+            <!-- END Card Profile Header -->
+            <!-- Card Content -->
+            <div class="row gutter30">
+                <div class="col-md-8">
+                    <div class="block">
+                        <div class="block-title">
+                            <h2><i class="fa fa-rss"></i>
+                                <%= piante.nome %>
+                            </h2>
+                        </div>
+                        <!-- Card Image -->
+                        <ul class="media-list text-center">
+                            <li class="media">
+                                <img src="/db/plant/<%= piante.image %>" class="card">
+                            </li>
+                        </ul>
+                        <!-- End Card Image -->    
+                    </div>
+                </div>
+                <!-- Lateral Box -->
+                <div class="col-md-4">
+                    <!-- Water Needs -->
+                    <div class="block full">
+                        <div class="block-title">
+                            <h2><i class="fa fa-tint" aria-hidden="true"></i> Valori Acqua</h2>
+                        </div>
+                        <ul>
+                            <li>pH:
+                                <%= piante.ph %>
+                            </li>
+                            <li>gH:
+                                <%= piante.dh %>
+                            </li>
+                            <li>Temperatura:
+                                <%= piante.temperatura %>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END Water Needs -->
+                    <!-- Description -->
+                    <div class="block">
+                        <div class="block-title">
+                            <h2><i class="fa fa-info"></i> Descrizione</h2>
+                        </div>
+                        <ul>
+                            <li>Famiglia:
+                                <%= piante.famiglia %>
+                            </li>
+                            <li>Dimensioni:
+                                <%= piante.dimensioni %>
+                            </li>
+                            <li>Provenienza:
+                                <%= piante.provenienza %>
+                            </li>
+                            <li>Crescita:
+                                <%= piante.crescita %>
+                            </li>
+                            <li>Difficolta':
+                                <%= piante.difficolta %>
+                            </li>
+                            <li>Riproduzione:
+                                <%= piante.riproduzione %>
+                            </li>
+                        </ul>
+                        <p>
+                            <%= piante.descrizione %>
+                        </p>
+                    </div>
+                    <!-- END Description -->
+                </div>
+                <!-- END Lateral Box -->
+            </div>
+            <!-- END User Card Box -->
+        </div>
+        <!-- END Page Content -->
 <% }) %>            
-
 <%- include('../partials/footer'); %>

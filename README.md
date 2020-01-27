@@ -13,7 +13,7 @@ My web app builded with:<br>
     <b>nodemon:</b> Installed globally. It is used to watch for changes to files and automatically restart the server.<br>
     <hr>
     For the <b>Front-end</b> i've used:<br>
-    <b>HTML</b><br><b>CSS</b><br><b>Bootstrap 4<b><br><b>JQuery</b><br><b>datables extension for JQuery</b> for the tables & add  advanced interaction controls
+    <b>HTML</b><br><b>CSS</b><br><b>Bootstrap 4</b><br><b>JQuery</b><br><b>datables extension for JQuery</b> for the tables & add  advanced interaction controls
     <hr>
     <a href="https://aquariumnext.herokuapp.com/">See on Heroku</a>.
     

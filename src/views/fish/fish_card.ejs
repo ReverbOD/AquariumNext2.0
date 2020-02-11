@@ -43,8 +43,8 @@
             </div>
             <ul class="breadcrumb breadcrumb-top">
                 <li><i href="/" class="fa fa-bookmark"></i></li>
-                <li><i href="/" ></i>Tabella</li>
-                <li><a href=""><%= pesci.nome %></a></li>
+                <li><a href="/fish">Elenco</a></li>
+                <li><i href="/" ></i><%= pesci.nome %></li>      
             </ul>
             <!-- END Card Profile Header -->
             <!-- Card Content -->
@@ -74,10 +74,10 @@
                         </div>
                         <ul>
                             <li>pH:
-                                <%= pesci.ph %>
+                                <%= pesci.pH %>
                             </li>
-                            <li>gH:
-                                <%= pesci.gh %>
+                            <li>dH:
+                                <%= pesci.dH %>
                             </li>
                             <li>Temperatura:
                                 <%= pesci.temperatura %>

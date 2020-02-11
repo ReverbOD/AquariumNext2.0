@@ -2033,24 +2033,6 @@ code {
 }
 
 
-/* Carousel */
-
-.carousel-control span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 5;
-    display: inline-block;
-}
-
-.carousel-control i {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-}
-
-
 /* Bottom Margin */
 
 p,

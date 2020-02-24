@@ -23,6 +23,13 @@ body {
     margin: 0 auto;
 }
 
+
+/* Calc result popup*/
+
+.d-none {
+    display: none !important;
+}
+
 .header-fixed-bottom #page-container {
     padding: 0 0 50px;
 }

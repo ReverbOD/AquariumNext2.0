@@ -32,32 +32,32 @@ const {
 // Routes index
 const indexRoutes = require('./src/routes/index');
 // routes calc
-const litraggioRoutes = require('./src/routes/litraggio');
-const pompaRoutes = require('./src/routes/pompa');
-const lumenRoutes = require('./src/routes/lumen');
-const cambioRoutes = require('./src/routes/cambio');
-const filtraggioRoutes = require('./src/routes/filtraggio');
-const termostatoRoutes = require('./src/routes/termostato');
-const fondoRoutes = require('./src/routes/fondo');
+const litraggioRoutes = require('./src/routes/calc');
+const pompaRoutes = require('./src/routes/calc');
+const lumenRoutes = require('./src/routes/calc');
+const cambioRoutes = require('./src/routes/calc');
+const filtraggioRoutes = require('./src/routes/calc');
+const termostatoRoutes = require('./src/routes/calc');
+const fondoRoutes = require('./src/routes/calc');
 // biotope routes
-const africaRoutes = require('./src/routes/africa');
-const asiaRoutes = require('./src/routes/asia');
-const europeRoutes = require('./src/routes/europe');
-const southamericaRoutes = require('./src/routes/southamerica');
+const africaRoutes = require('./src/routes/article');
+const asiaRoutes = require('./src/routes/article');
+const europeRoutes = require('./src/routes/article');
+const southamericaRoutes = require('./src/routes/article');
 // article routes
-const azotoRoutes = require('./src/routes/azoto');
-const backgroundRoutes = require('./src/routes/background');
-const chemestryRoutes = require('./src/routes/chemestry');
-const chooseRoutes = require('./src/routes/choose');
-const co2Routes = require('./src/routes/co2');
-const donotbuyRoutes = require('./src/routes/donotbuy');
-const floatRoutes = require('./src/routes/float');
-const historyRoutes = require('./src/routes/history');
-const naturewoodRoutes = require('./src/routes/naturewood');
-const pmddRoutes = require('./src/routes/pmdd');
-const rockRoutes = require('./src/routes/rock');
-const woodRoutes = require('./src/routes/wood');
-const groundRoutes = require('./src/routes/ground');
+const azotoRoutes = require('./src/routes/article');
+const backgroundRoutes = require('./src/routes/article');
+const chemestryRoutes = require('./src/routes/article');
+const chooseRoutes = require('./src/routes/article');
+const co2Routes = require('./src/routes/article');
+const donotbuyRoutes = require('./src/routes/article');
+const floatRoutes = require('./src/routes/article');
+const historyRoutes = require('./src/routes/article');
+const naturewoodRoutes = require('./src/routes/article');
+const pmddRoutes = require('./src/routes/article');
+const rockRoutes = require('./src/routes/article');
+const woodRoutes = require('./src/routes/article');
+const groundRoutes = require('./src/routes/article');
 
 //port
 let {

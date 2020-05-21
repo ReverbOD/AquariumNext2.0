@@ -10,7 +10,7 @@
         "ejs": "^3.0.1",
         "express": "^4.17.1",
         "express-fileupload": "^1.1.6",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.1",
         "mysql": "^2.17.1",
         "newrelic": "^6.2.0",
         "node": "^13.3.0",

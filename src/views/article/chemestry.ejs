@@ -1,103 +1,73 @@
+<!-- Header -->
 <%- include('../partials/header'); %>
-
-<!-- FX Container -->
-<div id="fx-container" class="fx-opacity">
-    <!-- Page content -->
-    <div id="page-content" class="block">
-        <!-- Article Header -->
-        <div class="block-header">
-            <!-- If you do not want a link in the header, instead of .header-title-link you can use a div with the class .header-section -->
-            <a href="" class="header-title-link">
-                <h1>
-                    <i class="gi gi-pencil animation-expandUp"></i>Chimica dell'Acqua<br><small>Tutto ciò che c'è da sapre sulla chimica in acquario</small>
-                </h1>
-            </a>
-        </div>
-        <ul class="breadcrumb breadcrumb-top">
-            <li><i class="fa fa-file-o"></i></li>
-            <li><a href="/home">Home</a></li>
-            <li>Chimica dell'Acqua</li>    
-        </ul>
-        <!-- END Article Header -->
-        <!-- Article Content -->
-        <div class="row gutter30">
-            <div class="col-sm-7">
-                <!-- Article Block -->
-                <div class="block">
-                    <!-- Article Title -->
-                    <div class="block-title">
-                        <h2></h2>
-                    </div>
-                    <!-- END Article Title -->
-                        <!-- Article Content -->
-                        <h2>Introduzione</h2>
-                        <p>Quando sentiamo in acquariologia parlare di Ph,Kh,Gh sono parole che a noi sembrano strano e senza senso, ma proviamo a darci un senso con questo articolo!<br>Conoscere questi principi è importante per mantenere in maniera opportuna le nostre vasche e dare il miglior ambiente ai nostri ospiti.<br>Queste conoscenze basta un minimo di chimica scolastica, bisogna sapere innanzitutto che il mantenimento del giusto equilibrio tra ioni, composti organici disciolti (DOC) e composti inorganici disciolti non solo è importante, ma è addirittura fondamentale per la longevità e la salute degli organismi che contano su di noi per la loro sopravvivenza.</p>
-                        <h2>pH</h2>
-                        <p>Il Ph è la misura di un valore che indica la basicità o l'acidità dell'acqua.<br>nell'acqua sono presenti degli ioni di idrogeno identificati dal simbolo H+ e degli ioni ossidrili identificati dal simbolo OH-.
-                        Praticamente questi due componenti che si formano dalla rottura della molecola dell'acqua H2O sono responsabili della acidità o basicità, in pratica se:
-                        <ul>
-                            <li> il numero di questi due componenti si equivale, avremo una soluzione neutra (pH=7)</li>
-                            <li>invece se prevalgono gli ioni di idrogeno H+(pH inferiore a 7), avremo una soluzione acida</li>
-                            <li>viceversa se c'è carenza di ioni di idrogeno (pH maggiore a 7), allora significa che avremo una alta concentrazione di ioni di OH- che determina la basicità della soluzione.</li>
-                        </ul>
-                        pH=-Log[H+]
-                        Quindi più questo valore è basso, più sono presenti i H+; più questo valore è alto, minore è la concentrazione dei H+.
-                        Specifico che le parentesi quadre simboleggiano concentrazioni molari, attraverso espressioni del tipo:
-                        [H+] = 10-5 mol/L
-                        il che significa che in un litro di acqua vi è un centomillesimo di mole di ioni H+.
-                        La mole è una grandezza molto usata in chimica e corrisponde a circa seicentomila miliardi di miliardi di particelle, numero che corrisponde a quello di Avogadro (6,022·1023)
-                        Ora guardiamo la figura precedente e cerchiamo di capire una cosa fondamentale che dovremo sempre tenere in mente.
-                        Quando vediamo che la differenza di pH tra 7.1 e 8.1 è 1, la differenza non sarà 1 bensì il suo ^ 10 (= 10) poichè è una scala logaritmica.
-                        Queste variazioni vengono mal tollerate dai pesci e dalle piante, e un rapido cambiamento può causare la morte dell'ospite               
-                        </p>
-                        <p></p>
-                        <h2>kH</h2>
-                        <p>Con il termine kH viene indicata la durezza del carbonato, ovvero la misura dellaquantità di Bicarbonati di Calcio e Magnesio.
-                        Questo elemento, viene anche definito come <b>Capacità Tampone dell’acqua</b> ovvero ha la capacità di contenere gli sbalzi di pH qualora venisse introdotto una sostanza che porta la variazione del pH.
-                        </p>
-                        <h2>gH</h2>
-                        <p>Con il Gh si considera la durezza totale dell’acqua, costituita dalla concentrazione dei sali di Calcio e Magnesio.
-                        Con durezza totale si intende la misura di un gruppo di ioni disciolti che hanno una carica +2 sull'acqua.
-                        Questo è anche misurato in dH o ppm e viene convertito allo stesso modo di come viene fatto per il KH.
-                        Quando sentiamo parlare di "acqua dolce" o "acqua dura", uno dei parametri da prendere (oltre al pH) è questo, poichè l'acqua dolce con un gH basso (0-6 dH ) viene definita "dolce" mentre quando ha un elevato GH (da 12-30 + dH) viene definita dura.
-                        Di solito, l'elevato GH è associato ad un ph basico ed un basso GH è associato ad acqua acida. La presenza di questi ioni nell'acqua è di grande importanza per i nostri pesci.
-                        Questo parametro è importante, poichè il calcio è molto importante nella costruzione di ossa e simili e i pesci stessi possono assorbire il calcio dall'acqua per integrare le loro esigenze dietetiche,
-                        e ioni come il sodio e il potassio sono elementi critici nei tessuti dei pesci per una corretta funzione dei tessuti nervosi e muscolari.
-                        Con un basso GH potrebbe accadere da parte dei tessuti dei nostri pesci un rilascio di questi ioni (attraverso le ghiandole) e può quindi generarsi nel pesce stesso uno stress osmotico.
-                        </p>
-                    </div>
-                    <!-- END Article Block -->
-                </div>
-                <div class="col-sm-5">
-                    <!-- Related Block -->
-                    <div class="block full">
-                        <!-- Related Title -->
-                        <div class="block-title">
-                            <h2><i class="fa fa-file-text"></i> Articoli Correlati</h2>
-                        </div>
-                        <!-- END Related Title -->
-                        <!-- Related Content -->
-                        <h4 class="sub-header">Articoli</h4>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/asia">Biotopo Sud Est Asiatico</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/choose">Primo Avvio Vasca</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/pmdd">Fertilizzazione Pmdd</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/wood">Legni Acquariologia</a></li>
-                        </ul>
-                        <h4 class="sub-header">Varie</h4>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/litraggio">Calcolo litraggio Vasca</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/africa">Biotopo Africa</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/pompa">Calcolatore portata Pompa</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/co2">CO2 DIY</a></li>
-                        </ul>
-                        <!-- END Related Content -->
-                    </div>
-                    <!-- END Related Block -->
-                </div>
+  <!-- Main -->
+<div class="main">
+    <!-- Article -->
+    <div class="article">
+        <!-- Article Title -->
+        <div class="jumbotron jumbotron-fluid title">
+            <div class="container">
+              <h1 class="display-4">Chimica dell'Acqua</h1>
+              <p class="lead">Concetti base per comprendere la chimica in acquario</p>
             </div>
-            <!-- END Article Content -->
-        </div>    
-        <!-- END Page Content -->
+        </div>
+        <!-- end Article Title -->
 
-<%- include('../partials/footer'); %>
+        <!-- intro -->
+        <p style="text-align: center; padding: 10px;"><b>Introduzione</b></p>
+        <p>Quando sentiamo in acquariologia parlare di Ph,Kh,Gh sono parole 
+        che a noi sembrano strano e senza senso, ma conoscere questi principi è importante per 
+        mantenere in maniera opportuna le nostre vasche e dare il miglior ambiente
+        ai nostri ospiti.
+        </p>
+        <!-- end intro -->
+
+        <!-- ph -->
+        <p style="text-align: center; padding: 10px;"><b>pH</b></p>
+        <p>Il Ph è la misura di un valore che indica la basicità o l'acidità dell'acqua.<br>nell'acqua
+        sono presenti degli ioni di idrogeno identificati dal simbolo H+ e degli ioni ossidrili identificati
+        dal simbolo OH-. Praticamente questi due componenti che si formano dalla rottura della molecola 
+        dell'acqua H2O sono responsabili della acidità o basicità, in pratica se:
+        <ul>
+            <li> il numero di questi due componenti si equivale, avremo una soluzione neutra (pH=7)</li>
+            <li>invece se prevalgono gli ioni di idrogeno H+(pH inferiore a 7), avremo una soluzione acida</li>
+            <li>viceversa se c'è carenza di ioni di idrogeno (pH maggiore a 7), allora significa che avremo una alta 
+            concentrazione di ioni di OH- che determina la basicità della soluzione.</li>
+        </ul>
+        Quindi più questo valore è basso, più sono presenti i H+; più questo valore è alto, minore è la concentrazione dei H+.
+        Specifico che le parentesi quadre simboleggiano concentrazioni molari, attraverso espressioni del tipo:
+        [H+] = 10-5 mol/L
+        il che significa che in un litro di acqua vi è un centomillesimo di mole di ioni H+.
+        <b>Importante</b> quando vediamo che la differenza di pH tra 7.1 e 8.1 è 1, la differenza non sarà 1 bensì il suo ^ 10 (= 10) poichè è una scala logaritmica.
+        Queste variazioni vengono mal tollerate dai pesci e dalle piante, e un rapido cambiamento può causare la morte dell'ospite               
+        </p>
+        <!-- end ph-->
+
+        <!-- kh -->
+        <p style="text-align: center; padding: 10px;"><b>kH</b></p>
+        <p>Con il termine kH viene indicata la durezza del carbonato, ovvero la misura dellaquantità di 
+        Bicarbonati di Calcio e Magnesio. Questo elemento, viene anche definito come <b>Capacità Tampone dell’acqua</b> 
+        ovvero ha la capacità di contenere gli sbalzi di pH qualora venisse introdotto una sostanza che porta la variazione del pH.
+        </p>
+        <!-- end kh -->
+
+        <!-- gh -->
+        <p style="text-align: center; padding: 10px;"><b>gH</b></p>
+        <p>Con il gH si considera la durezza totale dell’acqua, costituita dalla concentrazione dei sali di Calcio e Magnesio.
+        Con durezza totale si intende la misura di un gruppo di ioni disciolti che hanno una carica +2 sull'acqua.
+        Quando sentiamo parlare di "acqua dolce" o "acqua dura", uno dei parametri da prendere (oltre al pH) è questo, 
+        poichè l'acqua dolce con un gH basso (0-6 dH ) viene definita "dolce" mentre quando ha un elevato GH (da 12-30 + dH)
+        viene definita dura. Di solito, l'elevato GH è associato ad un ph basico ed un basso GH è associato ad acqua acida. 
+        La presenza di questi ioni nell'acqua è di grande importanza per i nostri pesci. Questo parametro è importante, 
+        poichè il calcio è molto importante nella costruzione di ossa e simili e i pesci stessi possono assorbire il calcio 
+        dall'acqua per integrare le loro esigenze dietetiche, e ioni come il sodio e il potassio sono elementi critici nei 
+        tessuti dei pesci per una corretta funzione dei tessuti nervosi e muscolari.
+        </p>
+        <!-- gh -->
+    </div>
+    <!-- end Article -->
+</div>
+<!-- end Main -->
+
+<!-- Footer -->
+<%- include('../partials/footer'); %>     

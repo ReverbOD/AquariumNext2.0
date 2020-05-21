@@ -1,4 +1,4 @@
-const Fishes = require('../models/db_pesci');
+const Fishes = require('../models/db.pesci');
 const {
     writeError
 } = require('../lib/writeLog');

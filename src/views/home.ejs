@@ -1,164 +1,80 @@
-<%- include('partials/header'); %>     
+<!-- Header -->
+<%- include('partials/header'); %>
 
-<!--Home -->
-<!-- FX Container -->
-<div id="fx-container" class="fx-opacity">
-    <!-- Page content -->
-    <div id="page-content" class="block">
-        <!-- Dashboard Header -->
-        <div class="block-header"></div>
-            <ul class="breadcrumb breadcrumb-top">
-                <li><i class="fa fa-home"></i></li>
-                <li><a href="">Main Page</a></li>
-            </ul>
-        <!-- END Dashboard Header -->
-            <!-- Dashboard Content -->
-            <div class="row gutter30">
-                <div class="col-md-6">
-                    <!-- Recent Updates Block -->
-                    <div class="block full">
-                        <!-- Recent Updates Title -->
-                        <div class="block-title">
-                            <h2><i class="fa fa-code"></i> Changelog</h2>
-                        </div>
-                        <!-- END Recent Updates Title -->
-                        <!-- Feedback Form -->
-                        <!-- <form action="index.html" method="post" class="profile-status block-top" onsubmit="return false;">
-                            <textarea id="status-update" name="status-update" rows="3" class="form-control" placeholder="Vuoi lasciare un Feedback o un suggerimento? Scrivi pure"></textarea>
-                            <div class="clearfix">
-                                <button type="submit" id="status-update-btn" class="btn btn-primary pull-right"> <iclass="fa fa-angle-right"></i>Invia</button>
-                             </div>
-                         </form>-->
-                        <!-- END feedback Form -->
-                        <!-- Updates -->
-                        <div class="timeline-con">
-                            <ul class="timeline remove-margin">
-                                <li class="alt-color">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">27/Gen/2020</small><i class="fa fa-plus"></i> Major Update</h4>
-                                        <div class="timeline-content">
-                                            <p class="clearfix">
-                                                Interfaccia Grafica totalmente ristrutturata
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>                                  
-                                <li class="text-right">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">13/Gen/2020</small><i class="fa fa-cloud-upload"></i> Small Visual Update</h4>
-                                        <div class="timeline-content">
-                                            <p>
-                                                <a href="page_special_user_profile.html"></a> Piccoli miglioramenti grafici per la sezione schede
-                                            </p>
-                                        </div>
-                                     </div>
-                                </li>
-                                <li class="alt-color">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">11/Gen/2020
-                                        ago</small><i class="fa fa-cog"></i> System Update</h4>
-                                        <div class="timeline-content"><strong>Aggiornamento Calcolatori</strong> aggiornati vecchi e
-                                            <a href="javascript:void(0)"></a> Aggiunti nuovi calcolatori
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-right">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">10/Gen/2020</small><i class="fa fa-magic"></i> Small Update</h4>
-                                        <div class="timeline-content"><a href="page_ready_pricing_tables.html">Aggiornamento database Piante</div>
-                                    </div>
-                                </li>
-                                <li class="text-right">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">9/Gen/2020</small><i class="fa fa-magic"></i> Small Update</h4>
-                                        <div class="timeline-content"><a href="page_ready_pricing_tables.html">Aggiornamento database Pesci</div>
-                                    </div>
-                                </li>
-                                <li class="text-right">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">8/Gen/2020</small><i class="fa fa-magic"></i> Small Update</h4>
-                                        <div class="timeline-content"><a href="page_ready_pricing_tables.html">Migliorata gestione query al
-                                                 database</a> per un rapido accesso ai contenuti</div>
-                                    </div>
-                                </li>
-                                <li class="text-right">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">6/Gen/2020</small><i class="fa fa-file"></i> DB Update</h4>
-                                        <div class="timeline-content">Aggiornato database piante, check it out <a href="javascript:void(0)">live</a>!</div>
-                                    </div>
-                                </li>
-                                <li class="alt-color">
-                                    <div class="timeline-item">
-                                        <h4 class="timeline-title"><small class="timeline-meta">4/Gen/2020</small><i class="fa fa-hdd-o"></i> Pre-Alpha release</h4>
-                                        <div class="timeline-content"><strong>Server #1</strong> hosted successfully!</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    <!-- END Updates -->
-                    </div>
-                <!-- END Recent Updates Block -->
+            <!-- Jumbotron -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">AquariumNext</h1>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                 </div>
-                <div class="col-md-6">
-                <!-- Quick Stats Block -->
-                    <div class="block">
-                        <!-- Quick Stats Title -->
-                        <div class="block-title">
-                            <h2 class="text-center"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Soddisfazione Utenti
-                                </a>
-                                </small>
-                            </h2>
-                            <!-- VEDERE PLUGIN-->
-                        </div>
-                        <!-- END Quick Stats Title -->
-                        <!-- Quick Stats Content -->
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="pie-chart block-section" data-percent="90" data-size="150">
-                                    <span>4.5<small>/5</small> </span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="pie-chart block-section" data-percent="20" data-size="150">
-                                    <span>2.0<small>/5</small> </span>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- END Quick Stats Content -->
-                    </div>
-                    <!-- END Quick Stats Block -->
-                    <!-- Earning/Sales Stats Block -->
-                    <div class="block full">
-                        <div class="block-title">
-                            <h2 class="text-center"><i class="gi gi-charts"></i> Le origini dell'Acquariofilia<small> -<a href="/history">Nel dettaglio</a></small></h2>
-                        </div>
-                        <div id="chart-classic" class="chart">L'allevamento di pesci in ambienti ristretti o artificiali è una pratica che affonda le proprie radici nella storia. Per migliaia di anni i pesci sono stati allevati in vasche e stagni come fonte di cibo. Nell'Europa medievale
-                            le vasche per le carpe erano una presenza quasi fissa nelle tenute di campagna e nei monasteri, in quanto fornivano un'alternativa alla carne per i giorni festivi quando quest'ultima non poteva essere consumata per motivi
-                            religiosi. Allo stesso modo in tutta l'Asia era diffusa l'abitudine di popolare le risaie con pesci d'acqua dolce commestibili come pesci gatto e Ciprinidi vari.
-                            <hr>È tra il X e il XII secolo che in Cina, durante la dinastia Sung, iniziò per la prima volta nella storia l’allevamento di pesci per scopi ornamentali. I cinesi iniziarono ad allevare antenati dei pesci rossi nelle case
-                            all’interno di grandi recipienti di ceramica. Nacquero laghetti nei giardini dove allevare pesci selezionati per la loro bellezza. Animali resistenti e abituati a vivere in acque stagnanti che dunque ben si adattarono alla
-                            vita in cattività. Iniziarono così anche gli allevamenti di pesci nelle risaie e vennero introdotti pesci gatto e Ciprinidi vari.
-                            <hr>Nel vicino Giappone ebbe atto un allevamento selettivo per dare origine alle più belle varietà artificiali di ...<a href="/">Leggi di più</a></div>
-                        </div>
-                        <!-- END Earning/Sales Stats Block -->
-                        <!-- Extra Block -->
-                        <div class="block">
-                            <!-- Extra Title -->
-                            <div class="block-title">
-                                <h2><i class="fa fa-thumbs-o-up"></i> Pesci Consigliati</h2>
-                            </div>
-                            <!-- END Extra Title -->
-                            <div class="content-text clearfix">
-                                <img src="img/template/fish.jpg" alt="avatar" class="img-circle img-responsive pull-left">
-                                <h3 class="push">Paracheidoron Innesi</h3>
-                                <a href="" class="btn btn-xs btn-success"><i class="fa fa-share"></i>
-                                    Vai alla Pagina</a>
-                            </div>
-                        </div>
-                        <!-- END Extra Block -->        
-                    </div>
-                </div>
-                <!-- END Dashboard Content -->
             </div>
-            <!-- END Page Content -->
-<%- include('partials/footer'); %>
+            <!-- end Jumbotron-->
+
+            <!-- Home Container-->
+            <div class="d-flex flex-wrap">
+
+                <!-- random fish card -->
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="/db/fish/Corydoras-paleatus.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Corydoras Palateaus</h5>
+                    <p class="card-text">Vanno previste zone d'ombra, formate da rocce cave...</p>
+                    <a href="/fish.card?id=17" class="btn btn-primary">Vedi la scheda</a>
+                    </div>
+                </div>
+               
+                <!-- end random fish card -->
+
+                <!-- article fish card-->
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/rio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">America del Sud</h5>
+                    <p class="card-text">Il biotopo Sud Americano è il biotopo per eccellenza, il più popolare e il più facile da ricreare per chiunque, dai neofiti agli esperti.</p>
+                    <a href="#" class="btn btn-primary">Leggi di più</a>
+                    </div>
+                </div>
+                <!-- end Random Plant card -->
+
+                <!-- random fish card -->
+               
+                <div class="card" style="width: 18rem;">
+                  <img src="db/fish/betta.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-title">Betta Splendens</h5>
+                  <p class="card-text">Da allevare preferibilmente da solo in caso di mas...</p>
+                  <a href="/fish.card?id=20" class="btn btn-primary">Vedi la scheda</a>
+                  </div>
+                </div>
+                 
+                <!-- end random fish card -->
+
+                <!-- First Item Random -->
+                <div class="card" style="width: 18rem;">
+                  <img src="/img/lab.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-title">Ciclo dell'azoto</h5>
+                  <p class="card-text">Quando sentiamo dire di "vasca matura" si intende un processo nel quale i batteri del filtro e nel fondo sono abbastanza numerosi da trasformare tutto l'ammonio prodotto dai pesci prima in nitriti e poi in nitrati.</p>
+                  <a href="#" class="btn btn-primary">Vedi la scheda</a>
+                  </div>
+                </div>
+                <!-- end Random Item-->
+
+                <!-- First Item Random -->
+                <div class="card" style="width: 18rem;">
+                  <img src="/db/plant/Bucephalandra Mini Red.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-title">Bucephalandra Lamandau Mini Red</h5>
+                  <p class="card-text">Pianta rara Epifita e attraente proveniente dal Bo...</p>
+                  <a href="/plant.card?id=35" class="btn btn-primary">Vedi la scheda</a>
+                  </div>
+                </div>
+                <!-- end Random Item-->
+
+            </div>
+            <!-- end Home Container-->
+
+<!-- Footer -->
+<%- include('partials/footer'); %>  

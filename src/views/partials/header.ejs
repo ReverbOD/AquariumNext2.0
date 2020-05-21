@@ -1,188 +1,170 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    
-    <title>AquariumNext#</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="AquariumNext, web app aquariology">
     <meta name="author" content="Giuseppe Gigliotti">
+    <title>AquariumNext</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!--Responsive designe-->
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <!-- DataTables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/fh-3.1.7/r-2.2.5/datatables.min.css"/>
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/plugins.css">
-    <link rel="stylesheet" type="text/css"  href="css/main.css">
-    <link rel="stylesheet" type="text/css"  href="css/themes.css">
-
-    <!-- Modernizr.js -->
-    <script type="text/javascript" src="/js/vendor/modernizr-respond.min.js"></script>
+    <!-- Core CSS -->
+    <link  rel="stylesheet" " href="css/core.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/483a9f5cc9.js" crossorigin="anonymous"></script>
 </head>
-
-<!-- Header -->
-
-<body class="header-fixed-top sidebar-left-pinned">
-
-    <!-- Sidebar -->
-    <div id="sidebar-left" class="enable-hover">
-        <!-- Sidebar Content -->
-        <div class="sidebar-content">
-            <!-- scrolling functionality -->
-            <div class="sidebar-left-scroll">
-                <!-- Sidebar Navigation -->
-                <ul class="sidebar-nav">
-                    <li>
-                        <h2 class="sidebar-header">Benvenuti</h2>
-                    </li>
-                    <li>
-                        <a href="/" class=" active"><i class="fa fa-home"></i>Menu' Principale</a>
-                    </li>
-                    <li>
-                        <h2 class="sidebar-header">Utility</h2>
-                    </li>
-                    <!-- Calculator -->
-                    <li>
-                        <a href="#" class="menu-link"><i class="fa fa-calculator"></i>Calcolatori</a>
-                        <ul>
-                            <li>
-                                <a href="/litraggio">Litraggio Vasca</a>
-                            </li>
-                            <li>
-                                <a href="/pompa">Portata Pompa</a>
-                            </li>
-                            <li>
-                                <a href="/termostato">Termostato</a>
-                            </li>
-                            <li>
-                                <a href="/filtraggio">Filtraggio Biologico</a>
-                            </li>
-                            <li>
-                                <a href="/lumen">Lumen Lampada Led</a>
-                            </li>
-                            <li>
-                                <a href="/fondo">Fondo</a>
-                            </li>
-                            <li>
-                                <a href="/cambio">Cambio Acqua</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Card -->
-                    <li>
-                        <a href="#" class="menu-link"><i class="fa fa-th"></i>Schede</a>
-                        <ul>
-                            <li>
-                                <a href="/fish">Pesci</a>
-                            </li>
-                            <!--<li>
-                                <a href="invertebrati.html">Invertebrati</a>
-                            </li>-->
-                            <li>
-                                <a href="/plant">Piante</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Article -->
-                    <li>
-                        <h2 class="sidebar-header">Articoli</h2>
-                    </li>
-                    <li>
-                        <a href="#" class="menu-link"><i class="fa fa-tablet"></i>Acquariologia</a>
-                        <ul>
-                            <li>
-                                <a href="/history">Storia</a>
-                            </li>
-                            <li>
-                                <a href="/chemestry">Chimica dell'Acqua</a>
-                            </li>
-                            <li>
-                                <a href="/azoto">Ciclo dell'Azoto</a>
-                            </li>
-                            <li>
-                                <a href="/choose">Primo Avvio Vasca</a>
-                            </li>
-                            <li>
-                                <a href="/donotbuy">Pesci da NON comprare</a>
-                            </li>
-                            <li>
-                                <a href="/rock">Rocce per acquariologia</a>
-                            </li>
-                            <li>
-                                <a href="/wood">Legni per acquariologia</a>
-                            </li>
-                            <li>
-                                <a href="/ground">Fondi per acquariologia</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- DIY -->
-                    <!--
-                    <li>
-
-                        <a href="#" class="menu-link"><i class="fa fa-cog"></i>Fai da Te</a>
-                        <ul>
-                            <li>
-                                <a href="/co2">Co2</a>
-                            </li>
-                            <li>
-                                <a href="/pmdd">Pmdd</a>
-                            </li>
-
-                            <li>
-                                <a href="/background">Sfondo 3D</a>
-                            </li>
-                            <li>
-                                <a href="/naturewood">Trattare Legni presi in Natura</a>
-                            </li>
-                            <li>
-                                <a href="/float">Separatore piante galleggiante</a>
-                            </li> 
-                        </ul>
-                    </li>
-                    -->
-                    <!-- Biotope -->
-                    <li>
-                        <a href="#" class="menu-link"><i class="fa fa-pagelines"></i>Biotopi</a>
-                        <ul>
-                            <li>
-                                <a href="/southamerica">Sud America</a>
-                            </li>
-                            <li>
-                                <a href="/africa">Africa</a>
-                            </li>
-                            <li>
-                                <a href="/asia">Asia</a>
-                            </li>
-                            <!-- <li>
-                                <a href="/europe">Europa</a>
-                            </li> -->
-                        </ul>
-                    </li>
-                </ul>
-                <!-- END Sidebar Navigation -->
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <!-- Logo/Header -->
+            <div class="sidebar-header">
+                <h2>AquariumNext</h2>
             </div>
-            <!-- END scrolling functionality -->
-        </div>
-        <!-- END Sidebar Content -->
-    </div>
-    <!-- END Left Sidebar -->
+            <!-- end Logo/Header -->
 
-    <!-- Page Container -->
-    <div id="page-container">
-        <!-- Header -->
-        <header class="navbar navbar-inverse navbar-fixed-top">
-            <!-- Left Header Navigation -->
-            <ul class="nav header-nav pull-left">
+            <!-- Sidebar Element -->
+            <ul class="list-unstyled components">
+
+                <!-- Home -->
                 <li>
-                    <a href="javascript:void(0)" id="sidebar-left-toggle">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <a  href="/"><i class="fas fa-home"></i> Home</a>
                 </li>
+                <!-- end Home -->
+
+                <!-- Storia-->
+                <li>
+                    <a href="/history"><i class="fas fa-book-open"></i> Storia dell'Acquariofilia </a>
+                </li>
+                <!-- end Storia -->
+
+                <!-- Non Comprare-->
+                <li>
+                    <a href="/donotbuy"><i class="fas fa-ban"></i> Pesci da NON Comprare</a>
+                </li>
+                <!-- end Non Comprare-->
+
+                <!-- Primo Avvio-->
+                <li>
+                    <a href="/start"><i class="fas fa-glass-whiskey"></i> Avvio Vasca</a>
+                </li>
+                <!-- end Primo Avvio-->
+
+                <!-- Chimica -->
+                <li>
+                    <a href="#chemSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-vial"></i> Chimica</a>
+                    <ul class="collapse list-unstyled" id="chemSubmenu">
+                        <li>
+                            <a href="/chemestry">Chimica dell'acqua</a>
+                        </li>
+                        <li>
+                            <a href="/azoto">Ciclo Azoto</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Chimica -->
+
+                <!-- Attrezzatura -->
+                <li>
+                    <a href="#gearSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-archive"></i> Attrezzatura</a>
+                    <ul class="collapse list-unstyled" id="gearSubmenu">
+                        <li>
+                            <a href="/ground">Fondo</a>
+                        </li>
+                        <li>
+                            <a href="/rock">Rocce</a>
+                        </li>
+                        <li>
+                            <a href="/wood">Legni</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Attrezzatura -->
+
+                <!-- Schede -->
+                <li>
+                    <a href="#tableSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-border-all"></i> Schede</a>
+                    <ul class="collapse list-unstyled" id="tableSubmenu">
+                        <li>
+                            <a href="/fish">Schede Pesci</a>
+                        </li>
+                        <li>
+                            <a href="/plant">Schede Piante</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Schede -->
+
+                <!-- Biotopi -->
+                <li>
+                    <a href="#biotopeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-frog"></i> Biotopi</a>
+                    <ul class="collapse list-unstyled" id="biotopeSubmenu">
+                        <li>
+                            <a href="/africa">Africa</a>
+                        </li>
+                        <li>
+                            <a href="/southamerica">America del Sud</a>
+                        </li>
+                        <li>
+                            <a href="/asia">Sud Est Asiatico</a>
+                        </li>
+                    </ul>
+                </li>
+                    <!-- end Biotopi -->
+
+                <!-- Calcolatori -->
+                <li>
+                    <a href="#calcSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-hammer"></i> Utility</a>
+                    <ul class="collapse list-unstyled" id="calcSubmenu">
+                        <li>
+                            <a href="/litraggio">Calcolatore Litraggio</a>
+                        </li>
+                        <li>
+                            <a href="/pompa">Portata Pompa</a>
+                        </li>
+                        <li>
+                            <a href="/termostato">Termostato</a>
+                        </li>
+                        <li>
+                            <a href="/filtraggio">Filtraggio Biologico</a>
+                        </li>
+                        <li>
+                            <a href="/lumen">Lumen LED</a>
+                        </li>
+                        <li>
+                            <a href="/fondo">Altezza Fondo</a>
+                        </li>
+                        <li>
+                            <a href="/cambio">Valori Acqua</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Calcolatori -->
             </ul>
-            <!-- END Left Header Navigation -->
-        </header>
-        <!-- END Header -->
+            <!-- Sidebar Element--> 
+        </nav>
+        <!--end Sidebar-->
+
+        <!-- Page Content -->
+        <div id="content">
+            <!-- Navbar-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Toggle Button-->
+                    <button type="button" id="sidebarCollapse" class="navbar-btn txt-color-white">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- Toggle Button -->
+                </div>
+            </nav>
+            <!-- end Navbar-->
+        

@@ -1,7 +1,4 @@
-const Plants = require('../models/db_piante');
-const {
-    writeError
-} = require('../lib/writeLog');
+const Plants = require('../models/db.piante.js');
 
 
 module.exports = {

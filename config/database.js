@@ -1,9 +1,11 @@
 // create connection to database
-W
+
  //local host
  module.exports = {
-     host: 'localhost',
-     user: 'Aquarium_admin',
-     password: 'ZLJuXp9jdU2VZidB',
-     database: 'aquarium_admin'
- };
+    connection: {
+        host: 'eu-cdbr-west-02.cleardb.net',
+        user: 'b749f2f7762b0d',
+        password: 'fd26a1d5',
+        database: 'heroku_11a8db03044f776'
+    }
+};

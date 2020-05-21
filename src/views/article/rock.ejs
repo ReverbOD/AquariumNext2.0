@@ -1,153 +1,101 @@
+<!-- Header -->
 <%- include('../partials/header'); %>
-
-<!-- FX Container -->
-<div id="fx-container" class="fx-opacity">
-    <!-- Page content -->
-    <div id="page-content" class="block">
-        <!-- Article Header -->
-        <div class="block-header">
-            <!-- If you do not want a link in the header, instead of .header-title-link you can use a div with the class .header-section -->
-            <a href="" class="header-title-link">
-                <h1>
-                    <i class="gi gi-pencil animation-expandUp"></i>Rocce<br><small>Le principali rocce che si trovano in commerico</small>
-                </h1>
-            </a>
-        </div>
-        <ul class="breadcrumb breadcrumb-top">
-            <li><i class="fa fa-file-o"></i></li>
-            <li><a href="/home">Home</a></li>
-            <li>Rocce Acquariofilia</li>          
-        </ul>
-        <!-- END Article Header -->
-        <!-- Article Content -->
-        <div class="row gutter30">
-            <div class="col-sm-7">
-                <!-- Article Block -->
-                <div class="block">
-                    <!-- Article Title -->
-                    <div class="block-title">
-                        <h2></h2>
-                    </div>
-                    <!-- END Article Title -->
-                        <!-- Article Content -->
-                        <!-- Intro -->
-                        <h2>Introduzione</h2>
-                        <p>In aquariofilia le rocce, intese come elemento decorativo di una vasca, sono state sempre utilizzate e con il progredire dell’ Aquascaping la richiesta delle più svariate forme e qualità, è aumentata a dismisura. Le rocce possono contenere elementi come il calcare che andrà a variare il kH e l pH della vasca in una certa misura, quindi è bene accertarsi prima con questa procedura:
-                        <ul>
-                            <li>Sapere con certezza il grado di alcalinità e rilascio di elementi che potrebbero influenzare i valori dell’ acqua in vasca come PH GH KH Nitriti e Nitrati.</li>
-                            <li> Effettuare la prova carbonatica autonomamente, mettendo una semplice goccia di anticalcare “Viakal” o Acido Muriatico o Acido Cloridrico HCL e attendere l’ eventuale reazione “friggitura”. Più la reazione sarà forte, più la pietra sarà alcalina e rilascerà in acqua carbonati che inalzeranno pH, gH, o kH.</li>
-                            <li>Pulire la roccia con l’ aiuto diuna spazzola sotto acqua corrente per eliminare detrit loro interno.</li>
-                            <li>Effettuare una bollitura in acqua per almeno 30 minuti per eliminare tutti gli eventuali elementi patogeni come batteri.</li>
-                        </ul>
-                        </p>
-                        <!-- Seryu-->
-                        <h2>Seiryu Stone</h2>
-                        <p>Sono rocce di origine calcarea, il colore va dal grigio scuro al grigio chiaro, con venature bianche.</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>
-                                    <a href="img/article/seiryu.jpg" data-toggle="lightbox-image">
-                                        <img src="img/article/seiryu.jpg" alt="fakeimg" class="img-responsive">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Dragon -->
-                        <h2>Dragon Stone</h2>
-                        <p>Il colore va dal marrone al giallo scuro con riflessi rossi o verdi, ha la caratteristica di essere molto leggera poichè ricca di numerosi fori e insenature quindi pratica per i fondi di vetro delle vasche. La Dragon stone è buonissima per le piante epifite che si attaccheranno molto rapidamente ed ha la caratteristica di non rilasciare carbonati e quindi non altererà i valori dell’ acqua, perciò potrà essere largamente utilizzata nella composizione del layout</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>
-                                    <a href="img/article/dragon.stone.jpg" data-toggle="lightbox-image">
-                                        <img src="img/article/dragon.stone.jpg" alt="fakeimg" class="img-responsive">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Pagoda -->
-                        <h2>Pagoda Stone</h2>
-                        <p>ste roccie hanno la particolarità di avere un ottima estetica, è formata da più strati di colore grigio e marrone. Come punto a suo favore, è una pietra che non rilascia carbonati in acqua</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>
-                                    <a href="img/article/pagoda.jpg" data-toggle="lightbox-image">
-                                        <img src="img/article/pagoda.jpg" alt="fakeimg" class="img-responsive">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Vulcan -->
-                        <h2>Vulcan Stone</h2>
-                        <p>Queste pietre sono aggregazioni naturali di origine lavica e quindi molto leggere perchè eccezionalmente molto porose. La caratteristica più importante di queste rocce è la presenza di milioni di micro-fori che favoriranno l’ insediamento dei batteri nitrificanti propedeutici allo sviluppo dell’ acquario come Nitrobacter e Nitrosomonas, non a caso viene utilizzata anche in forme ridotte come substrato per favorire il passaggio di acqua e rendere maggiormente ossigenato il fondo. Ottima qualità è anche quella di non alterare i valori dell’ acqua.</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>
-                                    <a href="img/article/vulcan.jpg" data-toggle="lightbox-image">
-                                        <img src="img/article/vulcan.jpg" alt="fakeimg" class="img-responsive">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Ardesia -->
-                        <h2>Ardesia Stone</h2>
-                        <p>Questa roccia, ha origine da sottili stratificazioni di limo, ha una peso relativamente contenuto ed è principalmente composta in lastre, questo permette di offire vaste superfici liscie (molto utili per la deposizione di uova di alcune specie) ed ha una forma molto elegante ed utile in alcuni allestimenti. Il colore è molto scuro, solitamente nero o verde cupo, con qualche venatura bianca. L’ ardesia ha la caratteristica di non rilasciare carbonati e quindi non altererà i valori dell’ acqua</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>
-                                    <a href="img/article/ardesia.jpg" data-toggle="lightbox-image">
-                                        <img src="img/article/ardesia.jpg" alt="fakeimg" class="img-responsive">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Yamaya -->
-                        <h2>Yamaya Stone</h2>
-                        <p>Di colore grigio scuro, quando sommerse creano un pattern unico.Non hanno caratterisctiche di durezza sulla forma e superficie, che le rende della grandezza di un pugno. Questo rende le Yamaya stones eccellenti rocce di riempimento, messe come terrazzo per creare un rialzo nel terreno.</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>
-                                    <a href="img/article/yamaya.jpg" data-toggle="lightbox-image">
-                                        <img src="img/article/yamaya.jpg" alt="fakeimg" class="img-responsive">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- END Article Block -->
-                </div>
-                <div class="col-sm-5">
-                    
-                    <!-- END Author Block -->
-                    <!-- Related Block -->
-                    <div class="block full">
-                        <!-- Related Title -->
-                        <div class="block-title">
-                            <h2><i class="fa fa-file-text"></i> Articoli Correlati</h2>
-                        </div>
-                        <!-- END Related Title -->
-                        <!-- Related Content -->
-                        <h4 class="sub-header">Articoli</h4>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/choose">Primo Avvio Vasca</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/pmdd">Choosing the best IDE</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/soutamerica">Biotopo Sud America</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/donotbuy">Pesci da NON comprare</a></li>
-                        </ul>
-                        <h4 class="sub-header">Varie</h4>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/azoto">Ciclo dell'Azoto</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/cambio">Calcolatore Cambio Acqua</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/termostato">Calcolatore Termostato Acquario</a></li>
-                            <li><i class="fa fa-angle-right fa-li"></i> <a href="/lumen">Calcolatore Lumen Lampada Led</a></li>
-                        </ul>
-                        <!-- END Related Content -->
-                    </div>
-                    <!-- END Related Block -->
-                </div>
+  <!-- Main -->
+  <div class="main">
+    <!-- Article -->
+    <div class="article">
+        <!-- Article Title -->
+        <div class="jumbotron jumbotron-fluid title">
+            <div class="container">
+              <h1 class="display-4">Rocce Acquariofilia</h1>
+              <p class="lead">Le principali rocce per acquariofilia in commercio </p>
             </div>
-            <!-- END Article Content -->
-        </div>    
-        <!-- END Page Content -->
+        </div>
+        <!-- end Article Title -->
 
-<%- include('../partials/footer'); %>
+         <!-- intro -->
+         <p style="text-align: center; padding: 10px;"><b>Introduzione</b></p>
+         <p>In aquariofilia le rocce, intese come elemento decorativo di una vasca, sono state sempre utilizzate e con il progredire dell’ Aquascaping la richiesta delle più svariate forme e qualità, è aumentata a dismisura. Le rocce possono contenere elementi come il calcare che andrà a variare il kH e l pH della vasca in una certa misura, quindi è bene accertarsi prima con questa procedura:
+            <ul>
+                <li>Sapere con certezza il grado di alcalinità e rilascio di elementi che potrebbero influenzare i valori dell’ acqua in vasca come PH GH KH Nitriti e Nitrati.</li>
+                <li> Effettuare la prova carbonatica autonomamente, mettendo una semplice goccia di anticalcare “Viakal” o Acido Muriatico o Acido Cloridrico HCL e attendere l’ eventuale reazione “friggitura”. Più la reazione sarà forte, più la pietra sarà alcalina e rilascerà in acqua carbonati che inalzeranno pH, gH, o kH.</li>
+                <li>Pulire la roccia con l’ aiuto diuna spazzola sotto acqua corrente per eliminare detrit loro interno.</li>
+                <li>Effettuare una bollitura in acqua per almeno 30 minuti per eliminare tutti gli eventuali elementi patogeni come batteri.</li>
+            </ul>
+        </p>
+        <!-- end intro -->
+
+        <!-- Seiryu -->
+        <p style="text-align: center; padding: 10px;"><b>Seiryu</b></p>
+        <p>Sono rocce di origine calcarea, il colore va dal grigio scuro al grigio chiaro, con venature bianche</p>
+        <div class="text-center">
+            <img src="img/article/seiryu.jpg"  class="rounded" alt="image" width="300" height="300">
+        </div>
+        <!-- end Seiryu-->
+
+        <!-- Dragon -->
+        <p style="text-align: center; padding: 10px;"><b>Dragon</b></p>
+        <p>Il colore va dal marrone al giallo scuro con riflessi rossi o verdi, ha la caratteristica di essere 
+        molto leggera poichè ricca di numerosi fori e insenature quindi pratica per i fondi di vetro delle 
+        vasche. La Dragon stone è buonissima per le piante epifite che si attaccheranno molto rapidamente ed ha 
+        la caratteristica di non rilasciare carbonati e quindi non altererà i valori dell’ acqua, perciò potrà 
+        essere largamente utilizzata nella composizione del layout</p>
+        <div class="text-center">
+            <img src="img/article/dragon.stone.jpg"  class="rounded" alt="inerte" width="300" height="300">
+        </div>
+        <!-- end Dragon-->
+
+        <!-- Pagoda -->
+        <p style="text-align: center; padding: 10px;"><b>Pagoda</b></p>
+        <p>ste roccie hanno la particolarità di avere un ottima estetica, è formata da più strati di colore 
+        grigio e marrone. Come punto a suo favore, è una pietra che non rilascia carbonati in acqua</p>
+        <div class="text-center">
+            <img src="img/article/pagoda.jpg"  class="rounded" alt="inerte" width="300" height="300">
+        </div>
+        <!-- end Pagoda-->
+
+        <!-- Vulcan -->
+        <p style="text-align: center; padding: 10px;"><b>Vulcan</b></p>
+        <p>Queste pietre sono aggregazioni naturali di origine lavica e quindi molto leggere 
+        perchè eccezionalmente molto porose. La caratteristica più importante di queste rocce è la 
+        presenza di milioni di micro-fori che favoriranno l’ insediamento dei batteri nitrificanti 
+        propedeutici allo sviluppo dell’ acquario come Nitrobacter e Nitrosomonas, non a caso viene 
+        utilizzata anche in forme ridotte come substrato per favorire il passaggio di acqua e rendere 
+        maggiormente ossigenato il fondo. Ottima qualità è anche quella di non alterare i valori dell’ 
+        acqua.</p>
+        <div class="text-center">
+            <img src="img/article/vulcan.jpg"  class="rounded" alt="inerte" width="300" height="300">
+        </div>
+        <!-- end Vulcan-->
+
+        <!-- Ardesia -->
+        <p style="text-align: center; padding: 10px;"><b>Ardesia</b></p>
+        <p>Questa roccia, ha origine da sottili stratificazioni di limo, ha una peso 
+        relativamente contenuto ed è principalmente composta in lastre, questo permette 
+        di offire vaste superfici liscie (molto utili per la deposizione di uova di alcune specie) 
+        ed ha una forma molto elegante ed utile in alcuni allestimenti. Il colore è molto scuro, 
+        solitamente nero o verde cupo, con qualche venatura bianca. L’ ardesia ha la caratteristica di 
+        non rilasciare carbonati e quindi non altererà i valori dell’ acqua</p>
+        <div class="text-center">
+            <img src="img/article/ardesia.jpg"  class="rounded" alt="inerte" width="300" height="300">
+        </div>
+        <!-- end Ardesia-->
+
+        <!-- Yamaya -->
+        <p style="text-align: center; padding: 10px;"><b>Yamaya</b></p>
+        <p>Di colore grigio scuro, quando sommerse creano un pattern unico.Non hanno caratterisctiche di 
+        durezza sulla forma e superficie, che le rende della grandezza di un pugno. Questo rende le 
+        Yamaya stones eccellenti rocce di riempimento, messe come terrazzo per creare un rialzo nel 
+        terreno.</p>
+        <div class="text-center">
+            <img src="img/article/yamaya.jpg"  class="rounded" alt="inerte" width="300" height="300">
+        </div>
+        <!-- end Yamaya-->
+
+    </div>
+    <!-- end Article -->
+</div>
+<!-- end Main -->
+
+<!-- Footer -->
+<%- include('../partials/footer'); %>     

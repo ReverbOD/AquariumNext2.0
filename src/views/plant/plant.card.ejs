@@ -1,0 +1,32 @@
+<%- include('../partials/header'); %>
+
+<% piante.forEach((piante, plant) => { %>
+    <!-- Main -->
+    <div class="main">
+        <!-- Article -->
+        <div class="article">
+            <!-- end Article Title -->
+            <div class="row">
+                <div class="col-md-9">
+                    
+                    <img class="rounded mx-auto d-block" style="width:600px; align-items: center;" src="/db/plant/<%= piante.image %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><b><%= piante.nome %></b></h5>
+                            <p class="card-text">Famiglia: <%= piante.famiglia %><br>Valori acqua:<%= piante.pH %> - dH <%= piante.dH %>
+                                <br>Temperatura: <%= piante.temperatura %>
+                                <br>Dimensioni: <%= piante.dimensioni %><br><br>Provenienza: <%= piante.provenienza %>
+                                <br>Crescita: <%= piante.crescita %><br>
+                                <br>Difficolta': <%= piante.difficolta %><br>Riproduzione: <%= piante.riproduzione %><br>Posizione: <%= piante.adattoAcquarioComunità %>
+                            </p>
+                            <p class="card-text"><%= piante.descrizione %></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- end Article -->
+    </div>
+    <!-- end Main -->
+<% }) %>                      
+<!-- Footer -->
+<%- include('../partials/footer'); %>  

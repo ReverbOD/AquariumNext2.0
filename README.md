@@ -1,19 +1,25 @@
 # AquariumNext2.0
- AquariumNext2.0 webapp
+ Aquariology web app
+ 
+ ## Authors
 
-My web app builded with:<br>
-    For the <b>back-end</b> i've used: <br>	
-    <b>nodejs:</b> Build entirely with nodejs for the back-end part<br>																																																												
-    <b>express:</b> used to create handle routing and process requests from the client.<br>
-    <b>express-fileupload:</b> Simple express file upload middleware that wraps around busboy.<br>
-    <b>body-parser:</b> used to parse incoming request from the client.<br>
-    <b>mysql:</b> Node JS driver for MySQL<br>
-    <b>ejs:</b> templating engine to render html pages for the app.<br>
-    <b>req-flash:</b> used to send flash messages to the view<br>
-    <b>nodemon:</b> Installed globally. It is used to watch for changes to files and automatically restart the server.<br>
-    <hr>
-    For the <b>Front-end</b> i've used:<br>
-    <b>HTML</b><br><b>CSS</b><br><b>Bootstrap 4</b><br><b>JQuery</b><br><b>datables extension for JQuery</b> for the tables & add  advanced interaction controls
-    <hr>
-    <a href="https://aquariumnext.herokuapp.com/">See on Heroku</a>.
-    
+* **Giuseppe Gigliotti** - *Initial work* - [ReverbOD](https://gigliottigiuseppe.it)
+ 
+## Built With
+###### Back End:
+* [nodejs:](https://nodejs.org/en/) - Build entirely with nodejs for the back-end part
+* [espress.js](https://expressjs.com/it/) - used to create handle routing and process requests from the client.
+* [express-fileupload](https://www.npmjs.com/package/express-fileupload) - Simple express file upload middleware that wraps around busboy.
+* [body-parser](https://www.npmjs.com/package/body-parser) - Used to parse incoming request from the client.
+* [MySQL](https://www.npmjs.com/package/mysql) - Node JS driver for MySQL.
+* [req-flash](https://www.npmjs.com/package/req-flash) - Used to send flash messages to the view.
+* [nodemon](https://www.npmjs.com/package/nodemon) - Installed globally. It is used to watch for changes to files and automatically restart the server.
+* [ejs](https://ejs.co/) - templating engine to render html pages for the app.
+
+###### Front End
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - The world’s most popular CSS framework for building responsive, mobile-first sites.
+* [JQuery](https://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library.
+* [DataTables.js](https://datatables.net/) - Extension for JQuery for the tables & add  advanced interaction controls.
+
+## See it
+[Heroku](https://aquariumnext.herokuapp.com/)

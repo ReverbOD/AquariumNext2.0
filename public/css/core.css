@@ -53,7 +53,7 @@ a, a:hover, a:focus {
     min-width: 250px;
     max-width: 250px;
     background: #242526;
-    color: #fff;
+    color: #008bff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -78,7 +78,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul p {
-    color: #fff;
+    color: #008bff;
     padding: 10px;
 }
 
@@ -89,11 +89,11 @@ a, a:hover, a:focus {
 }
 #sidebar ul li a:hover {
     color: #424244;
-    background: #fff;
+    background: #008bff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
+    color: #008bff;
     background: #424244;
 }
 
@@ -142,7 +142,7 @@ ul.CTAs a {
     width: 40px;
     height: 40px;
     background: #2c2c2d;
-    color: #d3d3da;
+    color: #229aff;
     cursor: pointer;
 }
 

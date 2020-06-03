@@ -21,5 +21,9 @@
 * [JQuery](https://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library.
 * [DataTables.js](https://datatables.net/) - Extension for JQuery for the tables & add  advanced interaction controls.
 
+### Compiled with
+* [webpack:](https://webpack.js.org/) - webpack is a static module bundler for modern JavaScript applications.
+* [babel:](https://babeljs.io/) - Babel is a JavaScript transpiler that converts edge JS into plain old one, that can run in any browser
+
 ## See it
 [Heroku](https://aquariumnext.herokuapp.com/)

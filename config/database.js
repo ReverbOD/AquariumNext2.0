@@ -1,11 +1,9 @@
 // create connection to database
-
- //local host
- module.exports = {
+module.exports = {
     connection: {
-        host: '',
-        user: '',
+        host: 'localhost',
+        user: 'root',
         password: '',
-        database: ''
+        database: 'heroku_11a8db03044f776'
     }
 };

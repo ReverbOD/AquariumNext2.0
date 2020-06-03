@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="AquariumNext, web app aquariology">
+    <meta name="author" content="Giuseppe Gigliotti">
+    <title>AquariumNext</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/fh-3.1.7/r-2.2.5/datatables.min.css"/>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="dist/bundle.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/483a9f5cc9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <!-- Logo/Header -->
+            <div class="sidebar-header">
+                <h2>AquariumNext</h2>
+            </div>
+            <!-- end Logo/Header -->
+
+            <!-- Sidebar Element -->
+            <ul class="list-unstyled components">
+
+                <!-- Home -->
+                <li>
+                    <a  href="/"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <!-- end Home -->
+
+                <!-- Storia-->
+                <li>
+                    <a href="/history"><i class="fas fa-book-open"></i> Storia dell'Acquariofilia </a>
+                </li>
+                <!-- end Storia -->
+
+                <!-- Non Comprare-->
+                <li>
+                    <a href="/donotbuy"><i class="fas fa-ban"></i> Pesci da NON Comprare</a>
+                </li>
+                <!-- end Non Comprare-->
+
+                <!-- Primo Avvio-->
+                <li>
+                    <a href="/start"><i class="fas fa-glass-whiskey"></i> Avvio Vasca</a>
+                </li>
+                <!-- end Primo Avvio-->
+
+                <!-- Chimica -->
+                <li>
+                    <a href="#chemSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-vial"></i> Chimica</a>
+                    <ul class="collapse list-unstyled" id="chemSubmenu">
+                        <li>
+                            <a href="/chemestry">Chimica dell'acqua</a>
+                        </li>
+                        <li>
+                            <a href="/azoto">Ciclo Azoto</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Chimica -->
+
+                <!-- Attrezzatura -->
+                <li>
+                    <a href="#gearSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-archive"></i> Attrezzatura</a>
+                    <ul class="collapse list-unstyled" id="gearSubmenu">
+                        <li>
+                            <a href="/ground">Fondo</a>
+                        </li>
+                        <li>
+                            <a href="/rock">Rocce</a>
+                        </li>
+                        <li>
+                            <a href="/wood">Legni</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Attrezzatura -->
+
+                <!-- Schede -->
+                <li>
+                    <a href="#tableSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-border-all"></i> Schede</a>
+                    <ul class="collapse list-unstyled" id="tableSubmenu">
+                        <li>
+                            <a href="/fish">Schede Pesci</a>
+                        </li>
+                        <li>
+                            <a href="/plant">Schede Piante</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Schede -->
+
+                <!-- Biotopi -->
+                <li>
+                    <a href="#biotopeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-frog"></i> Biotopi</a>
+                    <ul class="collapse list-unstyled" id="biotopeSubmenu">
+                        <li>
+                            <a href="/africa">Africa</a>
+                        </li>
+                        <li>
+                            <a href="/southamerica">America del Sud</a>
+                        </li>
+                        <li>
+                            <a href="/asia">Sud Est Asiatico</a>
+                        </li>
+                    </ul>
+                </li>
+                    <!-- end Biotopi -->
+
+                <!-- Calcolatori -->
+                <li>
+                    <a href="#calcSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-hammer"></i> Utility</a>
+                    <ul class="collapse list-unstyled" id="calcSubmenu">
+                        <li>
+                            <a href="/litraggio">Calcolatore Litraggio</a>
+                        </li>
+                        <li>
+                            <a href="/pompa">Portata Pompa</a>
+                        </li>
+                        <li>
+                            <a href="/termostato">Termostato</a>
+                        </li>
+                        <li>
+                            <a href="/filtraggio">Filtraggio Biologico</a>
+                        </li>
+                        <li>
+                            <a href="/lumen">Lumen LED</a>
+                        </li>
+                        <li>
+                            <a href="/fondo">Altezza Fondo</a>
+                        </li>
+                        <li>
+                            <a href="/cambio">Valori Acqua</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- end Calcolatori -->
+            </ul>
+            <!-- Sidebar Element--> 
+        </nav>
+        <!--end Sidebar-->
+
+        <!-- Page Content -->
+        <div id="content">
+            <!-- Navbar-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Toggle Button-->
+                    <button type="button" id="sidebarCollapse" class="navbar-btn txt-color-white">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- Toggle Button -->
+                </div>
+            </nav>
+            <!-- end Navbar-->
+        

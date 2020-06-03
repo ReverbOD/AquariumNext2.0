@@ -1,0 +1,86 @@
+<!-- Header -->
+<%- include('../partials/header'); %>
+  <!-- Main -->
+<div class="main">
+    <!-- Article -->
+    <div class="article">
+        <!-- Title -->
+        <div class="jumbotron jumbotron-fluid title">
+            <div class="container">
+              <h1 class="display-4">Calcolatore Lumen Led</h1>
+              <p class="lead">Scopri i Lumen necessari necessari per una buona salute delle tue piante </p>
+            </div>
+        </div>
+        <!-- end Title -->
+
+        <!-- calc main -->
+        <div class="container-fluid">
+            <!-- Center Element -->
+            <div class="d-flex justify-content-center">
+           
+                <!-- form -->
+                <form id="calcLumen">
+
+                    <!-- form align-->
+                    <div class="form-row align-items-center" >        
+                        <div class="col-auto">
+
+                            <!-- Litraggio Form-->
+                            <div class="form-label-group">
+                                <input type="number" min="0" class="form-control" id="litraggio" class="form-control" placeholder="Litraggio" required autofocus>
+                            </div>
+
+                             <!-- Lumen Form-->
+                             <div class="form-label-group">
+                                <input type="number" min="0" class="form-control" id="lumen" class="form-control" placeholder="Lumen" required autofocus>
+                            </div>
+
+                            <!--  Button -->
+                            <button type="submit" class="btn btn-primary calc">Calcola!</button>
+                            <button type="reset" class="btn btn-secondary reset">Reset</button>
+                    
+                        </div>
+                    </div>
+                    <!-- end form align -->    
+
+                </form>
+                <!-- end Form-->
+                
+            </div>
+            <!-- end Center Element -->
+
+            <!-- result -->
+            <div class="alert alert-success d-none mt-2 result" role="alert" id="resultLumen"></div>
+            <!-- end result -->
+
+        </div>
+        <!-- end calc main-->
+
+        <!-- info -->
+        <div>
+            <p style="margin-top: 30px; text-align: center;" ><b>Info</b></p>
+            <p> la prima domanda è come le piante usano la luce ma sarebbe meglio chiedersi quale luce sfruttano meglio le piante. Ebbene, spesso si legge sui forum o su facebook che la gradazione migliore è sui 6000 k max 8000k. In effetti lo è ma non è preciso. La pianta come essere vivente nasce, cresce ecc., quindi a seconda del suo livello di vita sfrutta gradazioni diverse. Per questo motivo è più sensato avere diverse gradazioni  in vasca in modo da coprire cromaticamente tutte le esigenze della pianta.
+                <ul>
+                    <li>Warm white – Bianco caldo – 3000 K circa</li>
+                    <li>Daylight/Natural white – Luce del giorno/Bianco naturale – 4500 K circa</li>
+                    <li>Cool white – Bianco freddo – 6000 K circa</li>
+                    <li>Blue sky – Bianco ghiaccio – 9000 K circa.</li>
+                </ul>
+            </p>
+            <p>Oltre al calore, si utilizzano i Lumen, poichè misura la quantità totale di luce visibile all’occhio umano, proveniente da una sorgente. Chiaramente, più è alto il Lumen maggiore sarà la luce sprigionata dalla lampadina. A seconda del valore che calcolerete sopra, consultate questa tabella per sapere la giusta concentrazione.
+                <ul>
+                    <li>15-30 lumen/litro - bassa illuminazione</li>
+                    <li>30-60 lumen/litro - illuminazione media</li>
+                    <li>70-90 lumen/litro - forte illuminazione, solo in caso di piante molto esigenti e in accoppiata con un erogazione di co2 e fertilizzanti</li>
+                </ul>
+            </p>
+        </div>
+        <!-- end info-->
+
+    </div>
+    <!-- end Article -->
+</div>
+<!-- end Main -->
+
+<!-- Footer -->
+<%- include('../partials/footer'); %>  

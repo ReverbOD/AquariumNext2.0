@@ -1,0 +1,69 @@
+<!-- Header -->
+<%- include('../partials/header'); %>
+  <!-- Main -->
+<div class="main">
+    <!-- Article -->
+    <div class="article">
+        <!-- Title -->
+        <div class="jumbotron jumbotron-fluid title">
+            <div class="container">
+              <h1 class="display-4">Calcolatore per il Filtraggio Biologico</h1>
+              <p class="lead">Scopri la quantità di materiale filtrante biologico per il miglior equilibrio della tua vasca </p>
+            </div>
+        </div>
+        <!-- end Title -->
+
+        <!-- calc main -->
+        <div class="container-fluid">
+            <!-- Center Element -->
+            <div class="d-flex justify-content-center">
+           
+                <!-- form -->
+                <form id="calcFiltraggio">
+
+                    <!-- form align-->
+                    <div class="form-row align-items-center" >        
+                        <div class="col-auto">
+
+                            <!-- Litraggio Form-->
+                            <div class="form-label-group">
+                                <input type="number" min="0" class="form-control" id="litraggio" class="form-control" placeholder="Litraggio" required autofocus>
+                            </div>
+
+                            <!--  Button -->
+                            <button type="submit" class="btn btn-primary calc">Calcola!</button>
+                            <button type="reset" class="btn btn-secondary reset">Reset</button>
+                    
+                        </div>
+                    </div>
+                    <!-- end form align -->    
+
+                </form>
+                <!-- end Form-->
+                
+            </div>
+            <!-- end Center Element -->
+
+            <!-- result -->
+            <div class="alert alert-success d-none mt-2 result" role="alert" id="resultFiltraggio"></div>
+            <!-- end result -->
+
+        </div>
+        <!-- end calc main-->
+
+        <!-- info -->
+        <div>
+            <p style="margin-top: 30px; text-align: center;" ><b>Info</b></p>
+            <p>La necessità del filtraggio biologico è quella di creare delle superfici porose per la deposizione e la proliferazione dei batteri nitrificanti per asmaltire la quantità di nitriti che gli abitanti della vasca andranno a produrre.</p>
+            <p>I batteri nitrificanti sono organismi che ottengono da elementi organici nutrimento che permettono l'equilibrio del nostro acquario. Questi organismi fanno in modo che l'acqua che circola nell'acquario viene rapidamente depurata da alcune sostanze molto pericolose prodotte dai pesci (principalmente l ammoniaca e i nitriti)</p>      
+            <p> Queste sostanze sono potenzialmente pericolose poichè potrebbero raggiungere livelli letali per i nostri ospiti Per consentire un efficacia abbattimento dell’ ammoniaca, quindi l'acqua deve scorrere nel vano filtro dove dopo una filtrazione meccanica (generalmente lana o spugne sintetiche) incontrerà la colonia dei batteri nitrificanti quest’ ultima dovrà essere di una biomassa adeguata per poter consumare in un unico passaggio tutta l ammoniaca e tutti i nitriti che riceve dalla vasca. I migliori prodotti da inserire sono: <ul><li>Cannolicchi ceramica o vetro sintetico</li><li>Siporax</li><li>BioBalls</li></ul></p>
+        </div>
+        <!-- end info-->
+
+    </div>
+    <!-- end Article -->
+</div>
+<!-- end Main -->
+
+<!-- Footer -->
+<%- include('../partials/footer'); %>  

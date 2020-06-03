@@ -1,0 +1,53 @@
+<!-- Header -->
+<%- include('../partials/header'); %>
+
+<% if (pesci.length > 0) {%>
+<!-- Main -->
+<div class="main">
+    <!-- Article -->
+    <div class="article">
+
+        <!-- Datatables Header -->
+        <div class="jumbotron jumbotron-fluid title">
+            <div class="container">
+                <h1 class="display-4">Schede Pesci</h1>
+                <p class="lead">Scopri la quantità di materiale filtrante biologico per il miglior equilibrio della tua vasca </p>
+            </div>
+        </div>   
+        <!-- end Header -->
+        
+        <!-- Datatables Content -->       
+        <div class="table-responsive">
+            <table id="data" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center"></th>
+                        <th>Nome</th>
+                        <th>Famiglia</th>
+                        <th>Provenienza</th>
+                        <th class="text-center">Litraggio minimo consigliato</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% pesci.forEach((pesci, fish) => { %>
+                        <tr>
+                            <td class="text-center"><img src="/icon/fish1.png" class="rounded-circle pesci-img" alt=""></td>
+                            <td><a href="/fish.card?id=<%= pesci.id %>"><%= pesci.nome %></a></td>
+                            <td><%= pesci.famiglia %></td>
+                            <td><%= pesci.provenienza %></td>
+                            <td class="text-center"><div class="btn-group"><%= pesci.litraggioMinimo %></div></td>
+                        </tr>
+                    <% }) %>  
+                </tbody>
+            </table>
+<% } else { %>
+    <p class="text-center">No pesci found</p>
+<% } %>
+        </div>
+        <!-- END Datatables Content -->
+    </div>
+</div>    
+
+<!-- Footer -->           
+<%- include('../partials/footer'); %>

@@ -1,9 +1,9 @@
-# AquariumNext2.0
- Aquariology web app
+#                                                        AquariumNext2.0
+##                                                     Aquariology web app
+##                                         [Heroku](https://aquariumnext.herokuapp.com/)
  
- ## Authors
-
-* **Giuseppe Gigliotti** - *Initial work* - [ReverbOD](https://gigliottigiuseppe.it)
+##                                                            Authors                                                  
+***Giuseppe Gigliotti** - *Initial work* - [ReverbOD](https://gigliottigiuseppe.it)
  
 ## Built With
 ### Back End:

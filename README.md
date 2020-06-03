@@ -9,10 +9,8 @@
 ### Back End:
 * [nodejs:](https://nodejs.org/en/) - Build entirely with nodejs for the back-end part
 * [espress.js](https://expressjs.com/it/) - used to create handle routing and process requests from the client.
-* [express-fileupload](https://www.npmjs.com/package/express-fileupload) - Simple express file upload middleware that wraps around busboy.
 * [body-parser](https://www.npmjs.com/package/body-parser) - Used to parse incoming request from the client.
 * [MySQL](https://www.npmjs.com/package/mysql) - Node JS driver for MySQL.
-* [req-flash](https://www.npmjs.com/package/req-flash) - Used to send flash messages to the view.
 * [nodemon](https://www.npmjs.com/package/nodemon) - Installed globally. It is used to watch for changes to files and automatically restart the server.
 * [ejs](https://ejs.co/) - templating engine to render html pages for the app.
 

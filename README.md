@@ -1,5 +1,5 @@
 # AquariumNext2.0
-## Aquarium web app
+**Aquarium web app**
  
 ## Authors                                                  
 **Giuseppe Gigliotti** - [ReverbOD](https://gigliottigiuseppe.it)

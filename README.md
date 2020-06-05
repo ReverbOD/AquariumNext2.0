@@ -1,5 +1,5 @@
 #                                                        AquariumNext2.0
-##                                                     Aquariology web app
+##                                                     Aquarium web app
  
 ##                                                            Authors                                                  
 ***Giuseppe Gigliotti** - *Initial work* - [ReverbOD](https://gigliottigiuseppe.it)

@@ -1,0 +1,123 @@
+/* !Navbar */
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $nav-width;
+    border-radius: 10px;
+    margin: 5px;
+    height: 99vh;
+    background-color: $bg-color;
+    color: $white-color;
+    padding: 1.5rem 1.5rem 2rem;
+    transition: 0.5s;
+    z-index: $z-fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  #toggle {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .nav-toggle{
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+  .nav-logo {
+    color: $white-color;
+    font-weight: 600;
+  }
+  
+  .nav-link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 0.75rem;
+    padding: 0.75rem;
+    color: $white-color;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: $first-color;
+    }
+  }
+  
+  .item-icon {
+    font-size: 1.25rem;
+  }
+  
+  .item-name {
+    font-size: $small-font-size;
+  }
+  
+  /* ?Navbar Active */
+  
+  .navbar.active {
+    width: 300px;
+  }
+  
+  /* ?Active link */
+  
+  .nav-link.active {
+    background-color: $first-color;
+  }
+  
+  /* ?Collapse Menu */
+  
+  .collapse {
+    grid-template-columns: 20px max-content 1fr;
+  }
+  
+  .collapse-link {
+    justify-self: flex-end;
+    transition: 0.5s;
+  }
+  
+  .submenu {
+    display: none;
+    padding: 0.75rem 2.25rem;
+  }
+  
+  .sublink {
+    color: $sub-color;
+    font-size: $small-font-size;
+  
+    &:hover {
+      color: $white-color;
+    }
+  }
+  
+  /* ?Show Collapse */
+  
+  .showCollapse {
+    display: block;
+  }
+  
+  /* ?Rotate icon*/
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* ?Responsive Sidebar */
+  @media (max-width: 767px) {
+    .navbar {
+      display: none;
+    }
+  }

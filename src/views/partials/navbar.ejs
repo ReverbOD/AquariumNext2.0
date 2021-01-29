@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/bundle.css" />
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>AquariumNext - Web App Acquariofilia</title>
+</head>
+
+<body id="body-pd">
+  <%- include('./mobile-nav.ejs'); %>
+  <div class="navbar" id="navbar">
+    <nav class="nav">
+      <div>
+        
+        <div id="toggle">
+          <i class="ri-menu-4-line nav-toggle" id="nav-toggle"></i>
+          <a href="#" class="nav-logo">AquariumNext</a>
+        </div>
+
+        <div class="nav-list">
+
+          <a href="#" class="nav-link active">
+            <i class="ri-home-2-line item-icon"></i>
+            <span class="item-name">Home</span>
+          </a>
+
+          <div class="nav-link collapse">
+            <i class="ri-book-3-line item-icon"></i>
+            <span class="item-name">Articoli</span>
+
+            <i class="ri-arrow-drop-right-line collapse-link"></i>
+
+            <ul class="submenu">
+              <a href="#" class="sublink">Storia dell'Acquariofilia</a>
+              <a href="#" class="sublink">Pesci da NON Comprare</a>
+              <a href="#" class="sublink">Avvio Vasca</a>
+            </ul>
+          </div>
+
+          <div class="nav-link collapse">
+            <i class="ri-sip-line item-icon"></i>
+            <span class="item-name">Chimica</span>
+
+            <i class="ri-arrow-drop-right-line collapse-link"></i>
+
+            <ul class="submenu">
+              <a href="#" class="sublink">Chimica Acqua</a>
+              <a href="#" class="sublink">Ciclo Azoto</a>
+            </ul>
+          </div>
+
+          <div class="nav-link collapse">
+            <i class="ri-archive-line item-icon"></i>
+            <span class="item-name">Attrezzatura</span>
+
+            <i class="ri-arrow-drop-right-line collapse-link"></i>
+
+            <ul class="submenu">
+              <a href="#" class="sublink">Fondo</a>
+              <a href="#" class="sublink">Legni</a>
+              <a href="#" class="sublink">Rocce</a>
+            </ul>
+          </div>
+
+          <div class="nav-link collapse">
+            <i class="ri-folder-line item-icon"></i>
+            <span class="item-name">Schede</span>
+
+            <i class="ri-arrow-drop-right-line collapse-link"></i>
+
+            <ul class="submenu">
+              <a href="/pesci-acquario" class="sublink">Pesci</a>
+              <a href="/piante-acquario" class="sublink">Piante</a>
+              <a href="#" class="sublink">Invertebrati</a>
+            </ul>
+          </div>
+
+          <div class="nav-link collapse">
+            <i class="ri-earth-line item-icon"></i>
+            <span class="item-name">Biotopi</span>
+
+            <i class="ri-arrow-drop-right-line collapse-link"></i>
+
+            <ul class="submenu">
+              <a href="#" class="sublink">Africa</a>
+              <a href="#" class="sublink">America del Sud</a>
+              <a href="#" class="sublink">Sud Est Asiatico</a>
+            </ul>
+          </div>
+
+          <div class="nav-link collapse">
+            <i class="ri-tools-line item-icon"></i>
+            <span class="item-name">Utility</span>
+
+            <i class="ri-arrow-drop-right-line collapse-link"></i>
+
+            <ul class="submenu">
+              <a href="#" class="sublink">Litraggio</a>
+              <a href="#" class="sublink">Portata Pompa</a>
+              <a href="#" class="sublink">Filtraggio Bio</a>
+              <a href="#" class="sublink">Termostato</a>
+              <a href="#" class="sublink">Lumen</a>
+              <a href="#" class="sublink">Altezza Fondo</a>
+              <a href="#" class="sublink">Valori Acqua</a>
+            </ul>
+          </div>
+    </nav>
+  </div>
+  <!-- !END Navbar -->

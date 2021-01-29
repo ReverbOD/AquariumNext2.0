@@ -1,0 +1,88 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.tables-title{
+    padding:15px;
+}
+
+  .card{
+    background-color: $body-color;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 280px
+  }
+  
+  .card img{
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .card-info{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-info h4{
+    margin: 0;
+    
+  }
+  
+  .info-tab{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    max-height: 100%;
+    background-color:$white-color;
+    box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: $card-info-color;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+  }
+  
+  .btn-info {
+    border-radius: 10px;
+      background: $bg-color;
+      border-radius:3px;
+      border:1px solid;
+      display:inline-block;
+      cursor:pointer;
+      color:$white-color;
+      font-family:$body-font;
+      font-size:15px;
+      padding:5px 23px;
+      text-decoration:none;
+    margin:5px;
+  }
+  .btn-info:hover {
+      color:$white-color;
+      background-color:$first-color;
+  }
+  .btn-info:active {
+      position:relative;
+      top:1px;
+  }
+  
+  .card:hover .info-tab{
+    transform: translateY(0%);
+  }
+
+  @media (max-width: 767px){
+      .drawer{
+          top:15px;
+      }
+  }

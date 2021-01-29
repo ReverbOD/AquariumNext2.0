@@ -1,0 +1,44 @@
+<%- include('../partials/navbar.ejs'); %>
+    <!--
+<div class="drawer">
+<ul>
+    <li><%= fish.fish_name %></li>
+    <li><%= fish.fish_common_name %></li>
+    <li><%= fish.family_name %></li>
+    <li><%= fish.biotope_name %></li>
+    <li><%= fish.alimentation_typo %></li>
+    <li><%= fish.nature_fishes %></li>
+</ul>
+</div>
+-->
+
+    <div class="drawer">
+        <div class="flex-wrap">
+        <div id="info">
+            <div class="info-details">
+                <h1><%= fish.fish_name %></h1>
+                <span class="sub-info"><%= fish.fish_common_name %></span>
+                <p class="info-description">
+                    <%= fish.fish_description %>
+                </p>
+            </div>
+            <div class="info-img">
+                <img src="/media/fish/<%= fish.fish_img %>" alt="">
+                <div class="info-overlay">
+                    <h2>Info:</h2>
+                    <ul>
+                        <li><strong>Famiglia: </strong><%= fish.family_name %></li>
+                        <li><strong>Provenienza: </strong><%= fish.biotope_name %></li>
+                        <li><strong>Continente: </strong><%= fish.biotope_continent %></li>
+                        <li><strong>Temperatura: </strong><%= fish.fish_temperature %></li>
+                        <li><strong>pH: </strong><%= fish.fish_ph %></li>
+                        <li><strong>dH: </strong><%= fish.fish_dh %></li>
+                        <li><strong>Alimentazione: </strong><%= fish.alimentation_typo %></li>
+                        <li><strong>Temperamento: </strong><%= fish.nature_fishes %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <%- include('../partials/footer.ejs'); %>

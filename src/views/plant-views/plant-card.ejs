@@ -1,0 +1,32 @@
+<%- include('../partials/navbar.ejs'); %>
+
+<div class="drawer">
+    <div class="flex-wrap">
+    <div id="info">
+        <div class="info-details">
+            <h1><%= plant.plant_name %></h1>
+            <p class="info-description">
+                <%= plant.plant_description %>
+            </p>
+        </div>
+        <div class="info-img">
+            <img src="/media/plant/<%= plant.plant_image %>" alt="">
+            <div class="info-overlay">
+                <h2>Info:</h2>
+                <ul>
+                    <li><strong>Famiglia: </strong><%= plant.family_name %></li>
+                    <li><strong>Provenienza: </strong><%= plant.origin_continent %></li>
+                    <li><strong>Temperatura: </strong><%= plant.plant_temperature %></li>
+                    <li><strong>pH: </strong><%= plant.plant_ph %></li>
+                    <li><strong>dH: </strong><%= plant.plant_dh %></li>
+                    <li><strong>Illuminazione: </strong><%= plant.light_name %></li>
+                    <li><strong>Riproduzione: </strong><%= plant.reproduction_name %></li>
+                    <li><strong>Posizione: </strong><%= plant.position_name %></li>
+                    <li><strong>Difficoltà: </strong><%= plant.severity_name %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<%- include('../partials/footer.ejs'); %>

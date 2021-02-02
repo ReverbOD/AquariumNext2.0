@@ -7,7 +7,7 @@ const app = express();
 let { port } = require ("./src/config/port.js");
 
 app.set('port', process.env.port || port);
-app.set('views', __dirname + '/src/views/');
+app.set('views', path.join(__dirname, '/src/views/'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

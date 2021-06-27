@@ -1,4 +1,4 @@
-# AquariumNext2.0
+# AquariumNext
 
 ## Authors                                                  
 **Giuseppe Gigliotti** - [ReverbOD](https://reverbod.github.io/)
